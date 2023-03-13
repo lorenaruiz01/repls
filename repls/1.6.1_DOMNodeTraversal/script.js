@@ -9,4 +9,8 @@ let element = document.querySelector('.bob');
 //console.log(element.lastElementChild); // The last child of the element
 //console.log(element.childElementCount); // The number of children this element has
 
+// element.children; // (IMPORTANT: Not recommended) The direct children of this element
+// To get the direct children of element in the above example, you can utilize a CSS trick using the `>` selector with the `querySelectorAll()` function, like this:
+
+// `document.querySelectorAll('.bob > *')`
 
