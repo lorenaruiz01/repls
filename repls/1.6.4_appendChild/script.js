@@ -15,4 +15,6 @@ button.innerText = "Test";
 container.appendChild(button);
 
 
-// 
+// Unlike querySelector() and appendChild(), the createElement() method can only be called on the document object. 
+
+// Another thing to be aware of when using the appendChild() function is that it will add the passed element as the last child of the targeted element.
