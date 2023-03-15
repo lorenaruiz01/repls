@@ -5,3 +5,5 @@ let container = document.querySelector('.container');
 let button = document.createElement('button');
 button.innerText = "Test";
 container.appendChild(button);
+
+// One of the methods for properly appending HTML elements is appendChild(). 
