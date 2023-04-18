@@ -13,7 +13,7 @@
   }
   
   function validatePassword() {
-    
+    let value = passwordInput.value;
     return false;
   }
   
