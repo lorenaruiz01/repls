@@ -13,6 +13,13 @@
     }
 
     // Now add the error if the message isn’t empty
+    if (message){
+      let error = document.createElement('div');
+      error.classList.add('error-message');
+      error.innerText = message;
+      container.appendChild(error);
+  }
+    }
   }
 
   function validateEmail() {
