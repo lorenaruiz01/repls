@@ -8,6 +8,9 @@
 
     //Check and remove any existing errors 
     let error = container.querySelector('.error-message');
+    if (error){
+      container.removeChild(error);
+    }
   }
 
   function validateEmail() {
