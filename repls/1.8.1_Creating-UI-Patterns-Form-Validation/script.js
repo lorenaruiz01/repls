@@ -4,7 +4,7 @@
   let passwordInput = document.querySelector('#password');
   
   function showErrorMessage(input, message){
-    
+    let container = input.parentElement;
   }
 
   function validateEmail() {
