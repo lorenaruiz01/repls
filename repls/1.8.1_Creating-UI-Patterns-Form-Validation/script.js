@@ -5,23 +5,23 @@
 
 }
   
-  function showErrorMessage(input, message){
+  function showErrorMessage(input, message) {
     let container = input.parentElement; //The .input-wrapper
 
     //Check and remove any existing errors 
     let error = container.querySelector('.error-message');
-    if (error){
+    if (error) {
       container.removeChild(error);
     }
 
     // Now add the error if the message isn’t empty
-    if (message){
+    if (message) {
       let error = document.createElement('div');
       error.classList.add('error-message');
       error.innerText = message;
       container.appendChild(error);
-  }
     }
+  }
 
 
   function validateEmail() {
