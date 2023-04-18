@@ -11,6 +11,8 @@
     if (error){
       container.removeChild(error);
     }
+
+    // Now add the error if the message isn’t empty
   }
 
   function validateEmail() {
