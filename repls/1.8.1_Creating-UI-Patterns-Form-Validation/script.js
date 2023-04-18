@@ -2,6 +2,8 @@
   let form = document.querySelector('#register-form');
   let emailInput = document.querySelector('#email');
   let passwordInput = document.querySelector('#password');
+
+}
   
   function showErrorMessage(input, message){
     let container = input.parentElement; //The .input-wrapper
@@ -20,7 +22,7 @@
       container.appendChild(error);
   }
     }
-  }
+
 
   function validateEmail() {
     let value = emailInput.value;
