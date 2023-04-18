@@ -9,7 +9,7 @@
     let hasDot = value.indexOf('.') > - 1;
     return value && hasAtSign && hasDot;
 
-    return false;
+    // return false;
   }
   
   function validatePassword() {
