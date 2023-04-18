@@ -14,6 +14,7 @@
   
   function validatePassword() {
     let value = passwordInput.value;
+    return value && value.length >= 8;
     return false;
   }
   
