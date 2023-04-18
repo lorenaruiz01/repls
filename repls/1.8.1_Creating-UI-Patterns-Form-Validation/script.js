@@ -4,7 +4,7 @@
   let passwordInput = document.querySelector('#password');
   
   function validateEmail() {
-    
+    let value = emailInput.value;
     return false;
   }
   
