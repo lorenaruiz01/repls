@@ -3,6 +3,10 @@
   let emailInput = document.querySelector('#email');
   let passwordInput = document.querySelector('#password');
   
+  function showErrorMessage(input, message){
+    
+  }
+
   function validateEmail() {
     let value = emailInput.value;
     let hasAtSign = value.indexOf('@') > -1;
