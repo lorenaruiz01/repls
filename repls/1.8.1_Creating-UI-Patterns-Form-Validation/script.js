@@ -5,6 +5,8 @@
   
   function validateEmail() {
     let value = emailInput.value;
+    let hasAtSign = value.indexOf('@') > -1;
+    
     return false;
   }
   
