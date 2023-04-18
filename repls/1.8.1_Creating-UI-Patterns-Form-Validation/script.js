@@ -5,6 +5,9 @@
   
   function showErrorMessage(input, message){
     let container = input.parentElement; //The .input-wrapper
+
+    //Check and remove any existing errors 
+    let error = container.querySelector('.error-message');
   }
 
   function validateEmail() {
