@@ -8,8 +8,6 @@
     let hasAtSign = value.indexOf('@') > -1;
     let hasDot = value.indexOf('.') > - 1;
     return value && hasAtSign && hasDot;
-
-    // return false;
   }
   
   function validatePassword() {
