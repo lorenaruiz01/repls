@@ -28,6 +28,7 @@
     let value = emailInput.value;
       if (!value) {
         showErrorMessage(emailInput, 'Email is a requried field.');
+        return false;
       }
     let hasAtSign = value.indexOf('@') > -1;
     let hasDot = value.indexOf('.') > - 1;
