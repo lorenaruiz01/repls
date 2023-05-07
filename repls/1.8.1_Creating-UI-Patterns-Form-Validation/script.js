@@ -30,9 +30,7 @@
         showErrorMessage(emailInput, 'Email is a requried field.');
         return false;
       }
-    let hasAtSign = value.indexOf('@') > -1;
-    let hasDot = value.indexOf('.') > - 1;
-    return value && hasAtSign && hasDot;
+    
   }
   
   function validatePassword() {
@@ -53,3 +51,7 @@
 
   // THE RETURN STATEMENT HERE
 })();
+
+// let hasAtSign = value.indexOf('@') > -1;
+// let hasDot = value.indexOf('.') > - 1;
+// return value && hasAtSign && hasDot;
