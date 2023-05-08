@@ -73,10 +73,11 @@
     if (validateForm()) {
       alert('Success!');
     }
-  })
+  });
+
+  emailInput.addEventListener('input', validateEmail);
+  passwordInput.addEventListener('input', validatePassword);
 
   // THE RETURN STATEMENT HERE
 })();
 
-emailInput.addEventListener('input', validateEmail);
-passwordInput.addEventListener('input', validatePassword);
