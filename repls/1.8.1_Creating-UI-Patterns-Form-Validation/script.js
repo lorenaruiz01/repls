@@ -35,6 +35,10 @@
         showErrorMessage(emailInput, 'You must enter a valid email address.');
         return false;
       }
+
+      if (value.indexOf('.') === -1) {
+        
+      }
   }
   
   function validatePassword() {
