@@ -56,6 +56,9 @@
       showErrorMessage(passwordInput, 'The password needs to be at least 8 characters long.');
       return false;
     }
+
+    showErrorMessage(passwordInput,null);
+    return true;
    
   }
   
