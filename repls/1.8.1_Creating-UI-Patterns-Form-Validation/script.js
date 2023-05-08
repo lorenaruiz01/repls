@@ -33,6 +33,7 @@
     
       if (value.indexOf('@') === -1){
         showErrorMessage(emailInput, 'You must enter a valid email address.');
+        return false;
       }
   }
   
