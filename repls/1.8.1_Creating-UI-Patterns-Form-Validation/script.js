@@ -31,6 +31,9 @@
         return false;
       }
     
+      if (value.indexOf('@') === -1){
+        
+      }
   }
   
   function validatePassword() {
