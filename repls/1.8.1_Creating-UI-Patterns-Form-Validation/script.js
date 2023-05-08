@@ -46,7 +46,9 @@
   
   function validatePassword() {
     let value = passwordInput.value;
-    return value && value.length >= 8;
+    
+    
+   
   }
   
   function validateForm() {
@@ -66,3 +68,5 @@
 // let hasAtSign = value.indexOf('@') > -1;
 // let hasDot = value.indexOf('.') > - 1;
 // return value && hasAtSign && hasDot;
+
+// return value && value.length >= 8;
