@@ -2,8 +2,6 @@
   let form = document.querySelector('#register-form');
   let emailInput = document.querySelector('#email');
   let passwordInput = document.querySelector('#password');
-
-}
   
   function showErrorMessage(input, message) {
     let container = input.parentElement; //The .input-wrapper
@@ -26,7 +24,8 @@
 
   function validateEmail() {
     let value = emailInput.value;
-      if (!value) {
+      
+    if (!value) {
         showErrorMessage(emailInput, 'Email is a requried field.');
         return false;
       }
@@ -38,6 +37,7 @@
 
       if (value.indexOf('.') === -1) {
         showErrorMessage(emailInput, 'You must enter a valid email address.');
+        return false;
       }
 
       showErrorMessage(emailInput, null);
