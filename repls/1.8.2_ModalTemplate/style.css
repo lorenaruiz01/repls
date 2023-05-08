@@ -4,6 +4,8 @@ body {
 }
 
 #modal-container {
+  display: none;
+}
   position: fixed;
   padding: 20px;
   box-sizing: border-box;
