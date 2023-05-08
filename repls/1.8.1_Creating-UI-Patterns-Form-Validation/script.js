@@ -51,6 +51,10 @@
       showErrorMessage(passwordInput, 'Password is a required field.');
       return false;
     }
+
+    if (value.length < 8 ) {
+      
+    }
    
   }
   
