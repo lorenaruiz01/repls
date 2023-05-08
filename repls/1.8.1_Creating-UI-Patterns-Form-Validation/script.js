@@ -53,7 +53,8 @@
     }
 
     if (value.length < 8 ) {
-      showErrorMessage(passwordInput, 'The password needs to be at least 8 characters long.')
+      showErrorMessage(passwordInput, 'The password needs to be at least 8 characters long.');
+      return false;
     }
    
   }
