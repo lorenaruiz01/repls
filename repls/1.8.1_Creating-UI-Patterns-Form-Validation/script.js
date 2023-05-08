@@ -39,6 +39,9 @@
       if (value.indexOf('.') === -1) {
         showErrorMessage(emailInput, 'You must enter a valid email address.');
       }
+
+      showErrorMessage(emailInput, null);
+      return true;
   }
   
   function validatePassword() {
