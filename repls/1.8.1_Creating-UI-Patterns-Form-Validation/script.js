@@ -77,3 +77,5 @@
 
   // THE RETURN STATEMENT HERE
 })();
+
+emailInput.addEventListener('input', validateEmail);
