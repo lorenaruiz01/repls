@@ -79,3 +79,4 @@
 })();
 
 emailInput.addEventListener('input', validateEmail);
+passwordInput.addEventListener('input', validatePassword);
