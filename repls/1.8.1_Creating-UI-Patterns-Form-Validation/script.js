@@ -63,7 +63,9 @@
   }
   
   function validateForm() {
-    return validateEmail() && validatePassword();
+    let isValidEmail = validateEmail();
+    let isValidPassword = validatePassword();
+    return isValidEmail && isValidPassword();
   }
   
   form.addEventListener('submit', (e) => {
