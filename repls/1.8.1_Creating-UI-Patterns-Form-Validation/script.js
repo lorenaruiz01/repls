@@ -49,6 +49,7 @@
     
     if (!value) {
       showErrorMessage(passwordInput, 'Password is a required field.');
+      return false;
     }
    
   }
