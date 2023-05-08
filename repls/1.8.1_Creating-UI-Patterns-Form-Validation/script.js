@@ -47,7 +47,9 @@
   function validatePassword() {
     let value = passwordInput.value;
     
-    
+    if (!value) {
+      showErrorMessage(passwordInput, 'Password is a required field.');
+    }
    
   }
   
