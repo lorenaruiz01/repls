@@ -34,6 +34,11 @@
     modalContainer.classList.remove('is-visible');
   }
   
+function showDialog (title, text) {
+  showModal (title, text);
+}
+
+
   document.querySelector('#show-modal').addEventListener('click', () => {
     showModal('Modal title', 'This is the modal content!');
   });
