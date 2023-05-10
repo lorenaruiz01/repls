@@ -30,6 +30,12 @@ function showModal(title, text) {
     modalContainer.appendChild(modal);
 
     modalContainer.classList.add('is-visible');
+}
+
+function hideModal(){
+        let modalContainer = document.querySelector('#modal-container');
+        modalContainer.classList.remove('is-visible');
+    }
     
     modalContainer.addEventListener('click', (e) => {
         // Since this is also triggered when clicking INSIDE the modal
@@ -42,10 +48,7 @@ function showModal(title, text) {
 
 }
 
-function hideModal(){
-    let modalContainer = document.querySelector('#modal-container');
-    modalContainer.classList.remove('is-visible');
-}
+
 
 window.addEventListener('keydown',(e) => {
     let modalContainer = document.querySelector('#modal-container');
