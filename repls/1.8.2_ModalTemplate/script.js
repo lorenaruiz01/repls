@@ -11,7 +11,6 @@ function showModal(title, text) {
     
     
     
-    modalContainer.classList.add('is-visible');
 }
 
 document.querySelector ('#show-modal').addEventListener('click', () => {
