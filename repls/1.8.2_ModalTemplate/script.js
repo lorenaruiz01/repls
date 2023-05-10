@@ -41,5 +41,5 @@ document.querySelector('#show-modal').addEventListener('click',() => {
 });
 
 function hideModal(){
-    
+    let modalContainer = document.querySelector('#modal-container');
 }
