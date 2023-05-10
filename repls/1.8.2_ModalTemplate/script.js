@@ -1,4 +1,4 @@
-function showModal () {
+function showModal (title, text) {
     let modalContainer = document.querySelector ('#modal-container');
     modalContainer.classList.add('is-visible');
 }
@@ -6,9 +6,6 @@ function showModal () {
 document.querySelector ('#show-modal').addEventListener('click', () => {
     showModal();
 });
-
-function showModal (title, text) {
-    let modalContainer = document.querySelector('#modal-container');
 
 // Clear all existing modal content
 modalContainer.innerHTML = '';
