@@ -39,3 +39,7 @@ modalContainer.classList.add('is-visible');
 document.querySelector('#show-modal').addEventListener('click',() => {
     showModal('This is the Modal Title', 'This is the modal content!');
 });
+
+function hideModal(){
+    
+}
