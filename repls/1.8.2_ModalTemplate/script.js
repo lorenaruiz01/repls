@@ -60,7 +60,6 @@ window.addEventListener('keydown',(e) => {
     if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
         hideModal();
     }
-
 });
 
 document.querySelector('#show-modal').addEventListener('click',() => {
