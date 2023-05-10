@@ -6,3 +6,7 @@ function showModal () {
 document.querySelector ('#show-modal').addEventListener('click', () => {
     showModal();
 });
+
+function showModal (title, text) {
+
+}
