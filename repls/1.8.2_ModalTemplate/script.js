@@ -35,3 +35,7 @@ modalContainer.appendChild(modal);
 modalContainer.classList.add('is-visible');
 
 }
+
+document.querySelector('#show-modal').addEventListener('click',() => {
+    
+})
