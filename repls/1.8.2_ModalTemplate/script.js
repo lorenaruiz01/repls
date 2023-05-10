@@ -13,3 +13,5 @@ function showModal (title, text) {
 
 // Clear all existing modal content
 modalContainer.innerHTML = '';
+
+let modal = document.createElement('div');
