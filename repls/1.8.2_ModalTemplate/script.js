@@ -16,3 +16,6 @@ modalContainer.innerHTML = '';
 
 let modal = document.createElement('div');
 modal.classList.add ('modal');
+
+// Add the new modal content
+let closeButtonElement = document.createElement('button');
