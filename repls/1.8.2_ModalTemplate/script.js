@@ -34,7 +34,7 @@ function showModal(title, text) {
 
 function hideModal(){
     modalContainer.classList.remove('is-visible');
-    }
+}
     
     modalContainer.addEventListener('click', (e) => {
         // Since this is also triggered when clicking INSIDE the modal
