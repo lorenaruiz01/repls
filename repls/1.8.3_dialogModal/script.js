@@ -36,6 +36,8 @@
   
 function showDialog (title, text) {
   showModal (title, text);
+  let modalContainer = document.querySelector('#modal-container');
+
 }
 
 
