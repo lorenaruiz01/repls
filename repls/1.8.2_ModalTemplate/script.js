@@ -25,3 +25,4 @@ closeButtonElement.innerText = 'Close';
 let titleElement = document.createElement('h1');
 titleElement.innerText = title;
 
+let contentElement = document.createElement('p');
