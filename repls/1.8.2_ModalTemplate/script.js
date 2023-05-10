@@ -50,13 +50,6 @@ modalContainer.addEventListener('click', (e) => {
     if (target === modalContainer) {
         hideModal();
     }
-
-
-}
-
-
-
-
 });
 
 document.querySelector('#show-modal').addEventListener('click',() => {
