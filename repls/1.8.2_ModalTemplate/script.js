@@ -39,7 +39,9 @@ function hideModal(){
 window.addEventListener('keydown',(e) => {
     if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
         hideModal();
-}
+    }
+});
+
     
 modalContainer.addEventListener('click', (e) => {
     // Since this is also triggered when clicking INSIDE the modal
@@ -48,7 +50,7 @@ modalContainer.addEventListener('click', (e) => {
     if (target === modalContainer) {
         hideModal();
     }
-});
+
 
 }
 
