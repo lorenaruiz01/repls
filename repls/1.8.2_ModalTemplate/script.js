@@ -20,6 +20,8 @@ modal.classList.add ('modal');
 let closeButtonElement = document.createElement('button');
 closeButtonElement.classList.add('modal-close');
 closeButtonElement.innerText = 'Close';
+closeButtonElement.addEventListener('click', hideModal);
+
 
 let titleElement = document.createElement('h1');
 titleElement.innerText = title;
@@ -44,3 +46,4 @@ function hideModal(){
     let modalContainer = document.querySelector('#modal-container');
     modalContainer.classList.remove('is-visible');
 }
+
