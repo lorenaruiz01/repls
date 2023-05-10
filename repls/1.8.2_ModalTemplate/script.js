@@ -1,5 +1,5 @@
 (function() {
-function showModal (title, text) {
+function showModal(title, text) {
     let modalContainer = document.querySelector ('#modal-container');
     modalContainer.classList.add('is-visible');
 }
