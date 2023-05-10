@@ -8,5 +8,6 @@ document.querySelector ('#show-modal').addEventListener('click', () => {
 });
 
 function showModal (title, text) {
+    let modalContainer = document.querySelector('#modal-container');
 
 }
