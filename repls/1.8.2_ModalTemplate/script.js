@@ -23,3 +23,5 @@ closeButtonElement.classList.add('modal-close');
 closeButtonElement.innerText = 'Close';
 
 let titleElement = document.createElement('h1');
+titleElement.innerText = title;
+
