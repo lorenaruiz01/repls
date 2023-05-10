@@ -48,9 +48,7 @@ document.querySelector ('#show-modal').addEventListener('click', () => {
 
 
 
-document.querySelector('#show-modal').addEventListener('click',() => {
-    showModal('This is the Modal Title', 'This is the modal content!');
-});
+
 
 function hideModal(){
     let modalContainer = document.querySelector('#modal-container');
@@ -63,5 +61,8 @@ window.addEventListener('keydown',(e) => {
         hideModal();
     }
 
-    });
+});
 
+document.querySelector('#show-modal').addEventListener('click',() => {
+    showModal('This is the Modal Title', 'This is the modal content!');
+});
