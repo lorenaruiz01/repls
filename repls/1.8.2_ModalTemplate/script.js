@@ -15,3 +15,4 @@ function showModal (title, text) {
 modalContainer.innerHTML = '';
 
 let modal = document.createElement('div');
+modal.classList.add ('modal');
