@@ -33,8 +33,7 @@ function showModal(title, text) {
 }
 
 function hideModal(){
-        let modalContainer = document.querySelector('#modal-container');
-        modalContainer.classList.remove('is-visible');
+    modalContainer.classList.remove('is-visible');
     }
     
     modalContainer.addEventListener('click', (e) => {
