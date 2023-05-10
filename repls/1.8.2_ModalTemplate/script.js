@@ -19,3 +19,4 @@ modal.classList.add ('modal');
 
 // Add the new modal content
 let closeButtonElement = document.createElement('button');
+closeButtonElement.classList.add('modal-close');
