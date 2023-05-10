@@ -26,3 +26,4 @@ let titleElement = document.createElement('h1');
 titleElement.innerText = title;
 
 let contentElement = document.createElement('p');
+contentElement.ELEMENT_NODE.innerText = text;
