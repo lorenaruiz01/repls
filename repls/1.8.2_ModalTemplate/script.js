@@ -30,4 +30,5 @@ contentElement.ELEMENT_NODE.innerText = text;
 
 modal.appendChild(closeButtonElement);
 modal.appendChild(titleElement);
+modal.appendChild(contentElement);
 
