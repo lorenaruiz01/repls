@@ -36,6 +36,8 @@
   
 function showDialog (title, text) {
   showModal (title, text);
+
+  // We have defined modalContainer here
   let modalContainer = document.querySelector('#modal-container');
   let modal = modalContainer.querySelector('.modal');
   let confirmButton = document.createElement('button');
