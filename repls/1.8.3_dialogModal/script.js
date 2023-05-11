@@ -42,7 +42,7 @@ function showDialog (title, text) {
   confirmButton.classList.add('modal-confirm');
   confirmButton.innerText = 'Confirm';
   let cancelButton = document.createElement('button');
-  
+  cancelButton.classList.add('modal-cancel');
 
 }
 
