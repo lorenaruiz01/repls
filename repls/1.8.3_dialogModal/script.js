@@ -46,7 +46,7 @@ function showDialog (title, text) {
   cancelButton.innerText = 'Cancel';
   modal.appendChild(confirmButton);
   modal.appendChild(cancelButton);
-
+  confirmButton.focus();
 }
 
 
