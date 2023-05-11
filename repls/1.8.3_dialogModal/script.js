@@ -44,6 +44,7 @@ function showDialog (title, text) {
   let cancelButton = document.createElement('button');
   cancelButton.classList.add('modal-cancel');
   cancelButton.innerText = 'Cancel';
+  modal.appendChild(confirmButton);
 
 }
 
