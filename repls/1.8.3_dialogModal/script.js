@@ -76,6 +76,11 @@ function showDialog (title, text) {
     }
   });
   
+  document.querySelector('#show-dialog').addEventListener('click', () => {
+    
+  });
+
+
   // THE RETURN STATEMENT HERE
   
 })();
