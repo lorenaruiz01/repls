@@ -40,7 +40,9 @@ function showDialog (title, text) {
   let modal = modalContainer.querySelector('.modal');
   let confirmButton = document.createElement('button');
   confirmButton.classList.add('modal-confirm');
-  confirmButton.innerText = 'Confirm'
+  confirmButton.innerText = 'Confirm';
+  let cancelButton = document.createElement('button');
+  
 
 }
 
