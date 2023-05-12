@@ -51,7 +51,7 @@ function showDialog (title, text) {
   modal.appendChild(confirmButton);
   modal.appendChild(cancelButton);
   
-  // Focus on the confirmButton so taht the user can simply press Enter
+  // Focus on the confirmButton so that the user can simply press Enter
   confirmButton.focus();
 }
 
