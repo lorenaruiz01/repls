@@ -35,7 +35,7 @@
   function hideModal() {
     modalContainer.classList.remove('is-visible');
 
-    if (dialogPromiseReject){
+    if (dialogPromiseReject) {
       dialogPromiseReject();
       dialogPromiseReject = null;
     }
