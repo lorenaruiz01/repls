@@ -42,9 +42,6 @@
   
   function showDialog (title, text) {
     showModal (title, text);
-
-  // Define modalContainer here
-  let modalContainer = document.querySelector('#modal-container');
   
   // Add a confirm and cancel button to the modal
   let modal = modalContainer.querySelector('.modal');
