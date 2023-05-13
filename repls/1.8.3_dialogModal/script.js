@@ -104,10 +104,6 @@ function showDialog (title, text) {
     }
   });
   
-  
-  });
-
-
-  // THE RETURN STATEMENT HERE
+});
   
 })();
