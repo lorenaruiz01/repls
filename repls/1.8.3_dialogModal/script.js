@@ -67,7 +67,7 @@ function showDialog (title, text) {
     confirmButton.addEventListener('click', () => {
       dialogPromiseReject = null //Reset this
       hideModal();
-      reject();
+      resolvev();
     });
   
     });
