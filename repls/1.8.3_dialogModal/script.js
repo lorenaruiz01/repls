@@ -56,8 +56,11 @@ function showDialog (title, text) {
 
 // Return a promise that resolves when confirmed, else rejects
   return new Promise ((resolve, reject) => {
+    cancelButton.addEventListener('click', () => {
+      hideModal();
+      reject();
+    });
     
-  })
 
 }
 
