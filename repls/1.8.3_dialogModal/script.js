@@ -53,6 +53,12 @@ function showDialog (title, text) {
   
   // Focus on the confirmButton so that the user can simply press Enter
   confirmButton.focus();
+
+// Return a promise that resolves when confirmed, else rejects
+  return new Promise ((resolve, reject) => {
+    
+  })
+
 }
 
 
