@@ -67,9 +67,9 @@ function showDialog (title, text) {
   return new Promise ((resolve, reject) => {
     cancelButton.addEventListener('click', hideModal);
     confirmButton.addEventListener('click', () => {
-      dialogPromiseReject = null //Reset this
+      dialogPromiseReject = null; //Reset this
       hideModal();
-      resolvev();
+      resolve();
     });
   dialogPromiseReject = reject;
     });
