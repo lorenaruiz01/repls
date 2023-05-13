@@ -60,7 +60,9 @@ function showDialog (title, text) {
       hideModal();
       reject();
     });
-    
+    confirmButton.addEventListener('click', () =>{
+      
+    })
 
 }
 
