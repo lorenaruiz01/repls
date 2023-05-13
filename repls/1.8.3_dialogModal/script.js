@@ -40,8 +40,8 @@
     }
   }
   
-function showDialog (title, text) {
-  showModal (title, text);
+  function showDialog (title, text) {
+    showModal (title, text);
 
   // Define modalContainer here
   let modalContainer = document.querySelector('#modal-container');
