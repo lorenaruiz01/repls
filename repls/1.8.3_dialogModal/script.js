@@ -69,9 +69,9 @@ function showDialog (title, text) {
       hideModal();
       resolvev();
     });
-  
+  dialogPromiseReject = reject;
     });
-});
+}
 
 
 
