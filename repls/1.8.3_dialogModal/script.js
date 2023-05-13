@@ -61,9 +61,10 @@ function showDialog (title, text) {
       reject();
     });
     confirmButton.addEventListener('click', () =>{
-      
+      hideModal();
+      resolve();
     })
-
+});
 }
 
 
