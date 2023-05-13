@@ -48,12 +48,15 @@ function showDialog (title, text) {
   
   // Add a confirm and cancel button to the modal
   let modal = modalContainer.querySelector('.modal');
+  
   let confirmButton = document.createElement('button');
   confirmButton.classList.add('modal-confirm');
   confirmButton.innerText = 'Confirm';
+  
   let cancelButton = document.createElement('button');
   cancelButton.classList.add('modal-cancel');
   cancelButton.innerText = 'Cancel';
+  
   modal.appendChild(confirmButton);
   modal.appendChild(cancelButton);
   
