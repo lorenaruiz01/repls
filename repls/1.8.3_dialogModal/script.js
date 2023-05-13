@@ -64,16 +64,15 @@ function showDialog (title, text) {
 // Return a promise that resolves when confirmed, else rejects
   return new Promise ((resolve, reject) => {
     cancelButton.addEventListener('click', hideModal);
-      
+    confirmButton.addEventListener('click', () => {
+      dialogPromiseReject = null //Reset this
       hideModal();
       reject();
     });
-    confirmButton.addEventListener('click', () =>{
-      hideModal();
-      resolve();
-    })
+  
+    });
 });
-}
+
 
 
   document.querySelector('#show-modal').addEventListener('click', () => {
