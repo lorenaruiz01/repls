@@ -70,8 +70,8 @@
       });
       // This can be used to reject from other functions
       dialogPromiseReject = reject;
-      });
-    }
+    });
+  }
 
 
   document.querySelector('#show-modal').addEventListener('click', () => {
@@ -84,6 +84,7 @@
     }, () => {
       alert('not confirmed');
     });
+  });
   
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
@@ -99,7 +100,5 @@
       hideModal();
     }
   });
-  
-});
   
 })();
