@@ -60,18 +60,18 @@
     // Focus on the confirmButton so that the user can simply press Enter
     confirmButton.focus();
 
-// Return a promise that resolves when confirmed, else rejects
-  return new Promise ((resolve, reject) => {
-    cancelButton.addEventListener('click', hideModal);
-    confirmButton.addEventListener('click', () => {
-      dialogPromiseReject = null; //Reset this
-      hideModal();
-      resolve();
-    });
-    // This can be used to reject from other functions
-    dialogPromiseReject = reject;
-    });
-}
+    // Return a promise that resolves when confirmed, else rejects
+    return new Promise ((resolve, reject) => {
+      cancelButton.addEventListener('click', hideModal);
+      confirmButton.addEventListener('click', () => {
+        dialogPromiseReject = null; //Reset this
+        hideModal();
+        resolve();
+      });
+      // This can be used to reject from other functions
+      dialogPromiseReject = reject;
+      });
+    }
 
 
 
