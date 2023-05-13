@@ -29,9 +29,16 @@
     
     modalContainer.classList.add('is-visible');
   }
+
+  let dialogPromiseReject; 
   
   function hideModal() {
     modalContainer.classList.remove('is-visible');
+
+    if (dialogPromiseReject){
+      dialogPromiseReject();
+      dialogPromiseReject = null;
+    }
   }
   
 function showDialog (title, text) {
