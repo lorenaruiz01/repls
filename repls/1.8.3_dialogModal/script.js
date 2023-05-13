@@ -2,7 +2,6 @@
   let modalContainer = document.querySelector('#modal-container');
   let dialogPromiseReject; //can set this later, by showDialog
   
-  // REST OF CODE
   
   function showModal(title, text) {
     // Clear all existing modal content
