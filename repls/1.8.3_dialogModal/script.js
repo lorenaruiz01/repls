@@ -71,7 +71,8 @@ function showDialog (title, text) {
       hideModal();
       resolve();
     });
-  dialogPromiseReject = reject;
+    // This can be used to reject from other functions
+    dialogPromiseReject = reject;
     });
 }
 
@@ -81,6 +82,12 @@ function showDialog (title, text) {
     showModal('Modal title', 'This is the modal content!');
   });
   
+  document.querySelector('#show-dialog').addEventListener('click', () => {
+    showDialog('Confirm action', 'Are you sure you want to do this?').then(function() {
+      alert('confirmed!');
+    }, () => {
+      alert('not confirmed');
+    });
   
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
@@ -97,12 +104,7 @@ function showDialog (title, text) {
     }
   });
   
-  document.querySelector('#show-dialog').addEventListener('click', () => {
-    showDialog('Confirm action', 'Are you sure you want to do this?').then(function() {
-      alert('confirmed!');
-    }, () => {
-      alert('not confirmed');
-    });
+  
   });
 
 
