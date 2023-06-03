@@ -23,10 +23,11 @@ let li = $('<li></li>');
 // append the li variable to the list variable: 
 list.append(li);
 
+// ----------END OF MINI-TUTORIAL------------
 
 
 
-
+// // ----------EXERCISE------------
 
 $('input').addClass('red');
 
