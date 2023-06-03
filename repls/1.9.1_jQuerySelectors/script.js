@@ -19,7 +19,8 @@ $('#list').append(<li>four</li>);
 // to append an li to the ol using the list variable:
 list.append("<li>four</li>");
 
-
+// you can also store each <li> element in a variable using: 
+let li = $('<li></li>');
 
 
 
