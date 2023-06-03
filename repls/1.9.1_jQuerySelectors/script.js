@@ -13,6 +13,8 @@ $('#list')
 
 let list = $('#list')
 
+// to append an li element to this list: 
+$('#list').append(<li>four</li>);
 
 
 
