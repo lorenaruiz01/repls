@@ -8,6 +8,11 @@
     <li>three</li>
 </ol>
 
+// to select the list with jQuery:
+$('#list')
+
+let list = $('#list')
+
 
 
 
