@@ -1,6 +1,4 @@
-// ----------------------------
-// Mini Tutorial
-
+// ----------MINI-TUTORIAL: SELECTING A LIST ELEMENT------------
 
 <ol id="list"> 
     <li>one</li>
@@ -22,20 +20,8 @@ list.append("<li>four</li>");
 // you can also store each <li> element in a variable using: 
 let li = $('<li></li>');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// append the li variable to the list variable: 
+list.append(li);
 
 
 
