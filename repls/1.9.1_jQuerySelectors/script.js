@@ -35,7 +35,7 @@ $('input').addClass('red');
 $('.main-button').addClass('green');
 
 // Below, make the text of all buttons yellow
-
+$('button').addClass('text--yellow');
 
 
 
