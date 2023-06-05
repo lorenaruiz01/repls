@@ -48,3 +48,4 @@ $('button').addClass('text--yellow');
 // get the value of the input with jQuery:
 $('#input').val();
 
+// store the value into a variable:
