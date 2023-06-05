@@ -41,3 +41,6 @@ $('button').addClass('text--yellow');
 
 // ----------MINI-TUTORIAL: GETTING INPUT VALUES------------
 
+// you can use val() to get the input values from the index page: 
+// ex: 
+
