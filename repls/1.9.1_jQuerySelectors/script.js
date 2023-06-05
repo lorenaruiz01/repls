@@ -39,4 +39,5 @@ $('button').addClass('text--yellow');
 
 
 
+// ----------MINI-TUTORIAL: GETTING INPUT VALUES------------
 
