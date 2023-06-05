@@ -49,3 +49,4 @@ $('button').addClass('text--yellow');
 $('#input').val();
 
 // store the value into a variable:
+let inputValue = $('#input').val();
