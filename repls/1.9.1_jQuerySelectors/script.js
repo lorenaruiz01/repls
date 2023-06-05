@@ -43,5 +43,8 @@ $('button').addClass('text--yellow');
 
 // you can use val() to get the input values from the index page: 
 // ex: 
-
 <input type="text" name="ListItem" id="input"></input>
+
+// get the value of the input with jQuery:
+$('#input').val();
+
