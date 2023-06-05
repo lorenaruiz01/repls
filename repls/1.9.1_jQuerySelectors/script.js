@@ -53,3 +53,10 @@ let inputValue = $('#input').val();
 
 // append this value to another element such as the li from the first mini-tutorial:
 li.append(inputValue);
+
+
+// ----------DOM MANIPULATION------------
+// jQuery is built around the idea of chaining. You can run multiple commands in a row on the same element:
+
+$('.notification').addClass('bright-red').delay(300).removeClass('bright-red')
+// In the example above, the element with the class notification has first been selected. Then, the class bright-red has been added to it. Since the function addClass() returns the same notification element that was already selected, you can now call another function on it, this time called delay(). This is a jQuery function that literally delays whatever happens next. Here, it’s creating a delay of 300 milliseconds after the bright-red class has been added. The delay() function then returns the same collection again (which, in this case, is still the notification element), allowing you to call removeClass() on the element to remove bright-red yet again. This is a common way to make an element flash in a specific color in jQuery.
