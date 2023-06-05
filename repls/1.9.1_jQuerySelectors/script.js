@@ -72,3 +72,8 @@ removeClass() // on the element to remove
 bright-red // yet again. This is a common way to make an element flash in a specific color in jQuery.
 
 
+// commands can also be written across multiple lines: 
+$('.notification')
+.addClass('bright-red')
+.delay(300)
+.removeClass('bright-red')
