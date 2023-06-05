@@ -50,3 +50,6 @@ $('#input').val();
 
 // store the value into a variable:
 let inputValue = $('#input').val();
+
+// append this value to another element such as the li from the first mini-tutorial:
+li.append(inputValue);
