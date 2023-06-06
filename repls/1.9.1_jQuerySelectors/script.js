@@ -93,4 +93,7 @@ document.querySelector('body').appendChild(newElement);
 
 
 // ----------MINI-TUTORIAL: CROSSING OUT LIST ITEMS------------
-
+// unordered list from the previous mini-tutorial: 
+<ol id="list">
+    <li>the value of the (inputValue) from the input element</li>
+</ol>
