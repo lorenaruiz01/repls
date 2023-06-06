@@ -103,3 +103,6 @@ document.querySelector('body').appendChild(newElement);
 
 // then you can add this class into the li element using jQuery: 
 li.addClass("strike");
+// *By doing this the list item li should be crossed out but still visible
+
+// ----------END OF MINI-TUTORIAL------------
