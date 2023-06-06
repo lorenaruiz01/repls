@@ -101,3 +101,5 @@ document.querySelector('body').appendChild(newElement);
 // first, cross out the li element. To do so, create a CSS class called strike that will apply line-through on the text:
 .strike{text-decoration:line-through};
 
+// then you can add this class into the li element using jQuery: 
+li.addClass("strike");
