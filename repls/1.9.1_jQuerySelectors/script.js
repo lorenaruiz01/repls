@@ -97,3 +97,7 @@ document.querySelector('body').appendChild(newElement);
 <ol id="list">
     <li>the value of the (inputValue) from the input element</li>
 </ol>
+
+// first, cross out the li element. To do so, create a CSS class called strike that will apply line-through on the text:
+.strike{text-decoration:line-through};
+
