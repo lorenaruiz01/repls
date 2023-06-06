@@ -53,6 +53,8 @@ let inputValue = $('#input').val();
 
 // append this value to another element such as the li from the first mini-tutorial:
 li.append(inputValue);
+// ----------END OF MINI-TUTORIAL------------
+
 
 
 // ----------DOM MANIPULATION------------
@@ -86,4 +88,6 @@ let newElement = document.createElement('div');
 newElement.classList.add('new-class');
 newElement.innerText = 'Content is here!';
 document.querySelector('body').appendChild(newElement);
+
+// * Although it looks more complicated, this longer code actually runs faster than its jQuery counterpart. 
 
