@@ -91,3 +91,6 @@ document.querySelector('body').appendChild(newElement);
 
 // * Although it looks more complicated, this longer code actually runs faster than its jQuery counterpart. 
 
+
+// ----------MINI-TUTORIAL: CROSSING OUT LIST ITEMS------------
+
