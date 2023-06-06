@@ -77,3 +77,6 @@ $('.notification')
 .addClass('bright-red')
 .delay(300)
 .removeClass('bright-red')
+
+// you can create new DOM elements like this:
+let newElement = $('<div class="new-class">Content is here!</div>')
