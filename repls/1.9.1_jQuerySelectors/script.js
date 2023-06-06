@@ -80,3 +80,10 @@ $('.notification')
 
 // you can create new DOM elements like this:
 let newElement = $('<div class="new-class">Content is here!</div>')
+
+// this is equivalent to the non-jQuery code:
+let newElement = document.createElement('div');
+newElement.classList.add('new-class');
+newElement.innerText = 'Content is here!';
+document.querySelector('body').appendChild(newElement);
+
