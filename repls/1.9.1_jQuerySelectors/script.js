@@ -129,3 +129,7 @@ li.addClass("delete");
 $('input').on('click', function(event) {
     // do something
 });
+$('input').off('click'); //remove all 'click'listeners
+
+
+
