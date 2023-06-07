@@ -117,3 +117,5 @@ li.addClass("strike");
     display:none;
 }
 
+// to hide an element, you can call or add the class delete to it:
+li.addClass("delete");
