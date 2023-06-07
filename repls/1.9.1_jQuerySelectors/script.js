@@ -134,7 +134,11 @@ $('input').off('click'); //remove all 'click'listeners
 
 
 // ----------MINI-TUTORIAL: CROSSING OUT ITEMS WITH EVENT HANDLING------------
+
 // if we want to cross out an item by clicking on it, we can use this event handling:
 li.on("click", function(){
     li.addClass("strike");
-})
+});
+// * here, 'on' is equivalent to addEvenListener in JavaScript and takes two arguments: 1st argument is the event (in this case it's the 'click' event) and the 2nd argument takes a function where you add the css class 'strike' to the 'li' element when it is clicked on.
+
+// ----------END OF MINI-TUTORIAL------------
