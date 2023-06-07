@@ -119,3 +119,8 @@ li.addClass("strike");
 
 // to hide an element, you can call or add the class delete to it:
 li.addClass("delete");
+
+// ----------END OF MINI-TUTORIAL------------
+
+
+// ----------EVENT HANDLING------------
