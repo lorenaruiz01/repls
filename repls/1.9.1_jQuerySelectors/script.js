@@ -111,3 +111,9 @@ li.addClass("strike");
 // ----------MINI-TUTORIAL: HIDE A LIST ITEM------------
 // you can use css display:none; to hide an element
 
+// first, create a new class called delete and give it the attribute display:none:
+
+.delete {
+    display:none;
+}
+
