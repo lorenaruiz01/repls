@@ -106,3 +106,8 @@ li.addClass("strike");
 // *By doing this the list item li should be crossed out but still visible
 
 // ----------END OF MINI-TUTORIAL------------
+
+
+// ----------MINI-TUTORIAL: HIDE A LIST ITEM------------
+// you can use css display:none; to hide an element
+
