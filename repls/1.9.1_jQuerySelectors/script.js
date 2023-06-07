@@ -124,3 +124,8 @@ li.addClass("delete");
 
 
 // ----------EVENT HANDLING------------
+// Similar to regular JavaScript, you can also add and remove event listeners with jQuery:
+
+$('input').on('click', function(event) {
+    // do something
+});
