@@ -1,0 +1,21 @@
+<script>
+  var car1 = {
+    model: 2019,
+    color: "red"
+  };
+
+  // The next code line implies: let car2 refer to what car1 is referring at
+  var car2 = car1;
+
+  console.log(car1); // {model: 2019, color: "red"};
+  console.log(car2); // {model: 2019, color: "red"};
+
+  // changing `model` property of the object referred by car1
+  car1.model = 2018;
+
+  console.log(car1); // {model: 2018, color: "red"}
+  console.log(car2); // {model: 2018, color: "red"} -> notice that model is now also 2018, even if the change was done through car1 
+
+ 
+</script>
+ 
