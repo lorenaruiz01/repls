@@ -9,3 +9,4 @@ function divideAnyValue(dividend, divisor){
 
 console.log(divide(4, 2));
 console.log(divide(7, 0));
+console.log(divide(1, 4));
