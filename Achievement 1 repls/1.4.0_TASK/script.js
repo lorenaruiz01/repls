@@ -64,3 +64,14 @@ function printArrayDetails(){
 }
 
 // FUNCTION PARAMETERS AND ARGUMENTS: 
+// What if you had another Pokémon array called repository2, and this array contained a different set of Pokémon than the original repository array?
+
+let repository = [
+  // pokemon objects
+];
+
+let repository2 = [
+  // different set of pokemon objects
+];
+
+//  to print this second list you'd assume that you could use the same function you wrote for printing the first list. The logic behind it would be the same
