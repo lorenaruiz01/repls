@@ -10,7 +10,7 @@ function add(firstNum, secondNum) {
   let resultA = firstNum + secondNum;
   console.log(resultA);
   }
-  add(3,5);
+  add(3,5);  // returns 8
 
 // ----------------------------------------------------
 
