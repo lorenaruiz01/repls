@@ -121,12 +121,17 @@ let pokemonList2 = [
   {
     name: 'weedle',
     height: 3,
-    types: ['bug', 'poison']
+    types: ['bug', 'poison'],
   },
   {
     name: 'pikachu',
     height: 4,
-    types: ['electric']
+    types: ['electric'],
+  },
+  {
+    name: 'jigglypuff',
+    height: 5,
+    types:['normal','fairy'],
   }
 ];
 
