@@ -6,5 +6,5 @@ function divideAnyValue(dividend, divisor){
           return result
       }
     }
-    
-    
+
+console.log(divide(4, 2));
