@@ -35,5 +35,6 @@ let age = 10;
 console.log(age); // returns 10'=
 
 function getNewAge(){
-  
+  age = age + 1;
+  return age;
 }
