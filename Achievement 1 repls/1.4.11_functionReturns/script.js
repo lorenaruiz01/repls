@@ -5,6 +5,13 @@ function add(number1, number2) {
 let result = add(1, 2); // add(1, 2) will log 3 because of the console.log statement in the function itself
 console.log(result); // this will log `undefined` since `result` is assigned what is returned by `add(1, 2)`, which is `undefined` (default return value)
 
+// a different example: 
+function add(firstNum, secondNum) {
+  let resultA = firstNum + secondNum;
+  console.log(resultA);
+  }
+  add(3,5);
+
 // ----------------------------------------------------
 
 
