@@ -103,4 +103,7 @@ let pokemonList = [
   // pokemon objects
 ];
 
+let pokemonList2 = [
+  // different set of pokemon objects
+];
 
