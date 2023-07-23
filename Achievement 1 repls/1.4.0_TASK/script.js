@@ -76,6 +76,11 @@ let repository2 = [
 
 //  to print this second list you'd assume that you could use the same function you wrote for printing the first list. The logic behind it would be the same.
 
+    // printArrayDetails();
+    // printArrayDetails();
+
 // however, the printArrayDetails() function is hardcoded to work on the repository array: (for (let i = 0; i < repository.length; i++)). So no matter how many times you run the function, it will always print the repository array, not the repository2 array. If you want to run this function on repository2 array, you'd need to replace repository with repository2. But this is not sustainable if you have multiple arrays that use the same function logic. 
 
-// 
+// A better way is through FUNCTION INPUTS. You can write a function in such as way as to expect an input. Then, when the function is callled, it will place whatever input it's given into its code. For printArrayDetails(), the input would be the name of the array. 
+
+// You can then call the function together with the name of the array you want to run it on, and it would print that array
