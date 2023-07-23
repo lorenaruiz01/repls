@@ -32,3 +32,5 @@ console.log('Value of "age" after function execution:' + ' ' + age); //returns  
 // Avoiding Side Effects:
 
 let age = 10;
+console.log(age); // returns 10'=
+
