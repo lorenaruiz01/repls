@@ -100,10 +100,38 @@ function printArrayDetails(list){
 // exercise 1.4 changes the name of the array back to pokemonList, this time adding another array named pokemonList2 (Section Function Parameters & Arguments, paragraph 10). 
 
 let pokemonList = [
-  // pokemon objects
+  {
+    name: 'bulbasaur', 
+    height: 0.7, 
+    types: ['grass', 'poison'],
+  }, 
+  {
+    name: 'charizard', 
+    height: 1.7, 
+    types: ['fire', 'flying'],
+  }, 
+  {
+    name: 'squirtle', 
+    height: 1, 
+    types: ['water'],
+  }
 ];
 
 let pokemonList2 = [
-  // different set of pokemon objects
+  {
+    name: 'weedle',
+    height: 3,
+    types: ['bug', 'poison']
+  },
+
 ];
 
+function printArrayDetails(list){
+  for (let i = 0; i < list.length; i++){
+    if (list[i].height > 1) {  //check condition of each pokemon height 
+      document.write(list[i].name + " (height: " + list[i].height + ')' + ' - wow, that\'s a big Pokemon!' + '<br>'); // loops over each pokemon and if true, prints name, height, and message. with line break
+    } else {  
+      document.write(list[i].name + " (height: " + list[i].height + ')' + '<br>'); // loops over each pokemon and prints name and heigh. with line break
+    }
+  }
+}
