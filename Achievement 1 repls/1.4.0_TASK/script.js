@@ -62,3 +62,5 @@ function printArrayDetails(){
     }
   }
 }
+
+// FUNCTION PARAMETERS AND ARGUMENTS: 
