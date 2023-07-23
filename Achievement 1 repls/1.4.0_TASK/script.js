@@ -95,3 +95,4 @@ function printArrayDetails(list){
   }
 }
 
+// notice the addition of LIST. list is a placeholder for the name of the array you decide to input into the function. 
