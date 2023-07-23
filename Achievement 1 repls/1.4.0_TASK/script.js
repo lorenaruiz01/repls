@@ -30,7 +30,7 @@
 // };
 
 
-// Exercise 1.4 changes the name of pokemonList to repository. from pokemonList to repository
+// Exercise 1.4 changes the name of pokemonList to repository. 
 
 // Code with new name for pokemonList: 
 
