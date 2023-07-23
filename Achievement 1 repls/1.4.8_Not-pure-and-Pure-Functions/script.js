@@ -50,5 +50,6 @@ console.log(age); // returns the value of age at whatever point age is defined. 
 let age = 10;
 
 function getNewAge(age){
-  
+  age = age + 1;
+  return age;
 }
