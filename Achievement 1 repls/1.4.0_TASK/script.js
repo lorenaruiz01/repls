@@ -137,7 +137,7 @@ let pokemonList2 = [
 
 function printArrayDetails(list){
   for (let i = 0; i < list.length; i++){
-    if (list[i].height > 1) {  //check condition of each pokemon height 
+    if (list[i].height > 3) {  //check condition of each pokemon height 
       document.write(list[i].name + " (height: " + list[i].height + ')' + ' - wow, that\'s a big Pokemon!' + '<br>'); // loops over each pokemon and if true, prints name, height, and message. with line break
     } else {  
       document.write(list[i].name + " (height: " + list[i].height + ')' + '<br>'); // loops over each pokemon and prints name and heigh. with line break
