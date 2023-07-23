@@ -96,3 +96,11 @@ function printArrayDetails(list){
 }
 
 // notice the addition of LIST. This represents something that you want to input into the function. list is a placeholder for the name of the array you decide to input into the function.  In programming, list is what’s called a function parameter.
+
+// exercise 1.4 changes the name of the array back to pokemonList, this time adding another array named pokemonList2 (Section Function Parameters & Arguments, paragraph 10). 
+
+let pokemonList = [
+  // pokemon objects
+];
+
+
