@@ -123,7 +123,11 @@ let pokemonList2 = [
     height: 3,
     types: ['bug', 'poison']
   },
-
+  {
+    name: 'pikachu',
+    height: 4,
+    types: ['electric']
+  }
 ];
 
 function printArrayDetails(list){
