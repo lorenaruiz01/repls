@@ -74,4 +74,8 @@ let repository2 = [
   // different set of pokemon objects
 ];
 
-//  to print this second list you'd assume that you could use the same function you wrote for printing the first list. The logic behind it would be the same
+//  to print this second list you'd assume that you could use the same function you wrote for printing the first list. The logic behind it would be the same.
+
+// however, the printArrayDetails() function is hardcoded to work on the repository array: (for (let i = 0; i < repository.length; i++)). So no matter how many times you run the function, it will always print the repository array, not the repository2 array. If you want to run this function on repository2 array, you'd need to replace repository with repository2. But this is not sustainable if you have multiple arrays that use the same function logic. 
+
+// 
