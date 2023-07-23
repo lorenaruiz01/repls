@@ -1,0 +1,2 @@
+function divideAnyValue(dividend, divisor){
+}
