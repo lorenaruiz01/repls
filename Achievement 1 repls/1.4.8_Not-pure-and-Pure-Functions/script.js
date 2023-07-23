@@ -34,3 +34,6 @@ console.log('Value of "age" after function execution:' + ' ' + age); //returns  
 let age = 10;
 console.log(age); // returns 10'=
 
+function getNewAge(){
+  
+}
