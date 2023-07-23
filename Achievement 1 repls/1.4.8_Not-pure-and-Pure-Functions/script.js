@@ -46,3 +46,6 @@ console.log(age); // returns the value of age at whatever point age is defined. 
 
 // You can solve this problem (the value of age changing) by passing the variable age as a parameter to the getNewAge() function like below. Now, the statement age = age + 1 in the function block will correspond to the age parameter, rather than interfering with the earlier age variable. 
 
+
+let age = 10;
+
