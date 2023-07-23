@@ -83,4 +83,15 @@ let repository2 = [
 
 // A better way is through FUNCTION INPUTS. You can write a function in such as way as to expect an input. Then, when the function is callled, it will place whatever input it's given into its code. For printArrayDetails(), the input would be the name of the array. 
 
-// You can then call the function together with the name of the array you want to run it on, and it would print that array
+// You can then call the function together with the name of the array you want to run it on, and it would print that array. To allow a function to take an input, you add input variables between the parentheses of the function declaration: 
+
+function printArrayDetails(list){
+  for (let i = 0; i < list.length; i++){
+    if (list[i].height > 1) {  //check condition of each pokemon height 
+      document.write(list[i].name + " (height: " + list[i].height + ')' + ' - wow, that\'s a big Pokemon!' + '<br>'); // loops over each pokemon and if true, prints name, height, and message. with line break
+    } else {  
+      document.write(list[i].name + " (height: " + list[i].height + ')' + '<br>'); // loops over each pokemon and prints name and heigh. with line break
+    }
+  }
+}
+
