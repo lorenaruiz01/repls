@@ -53,3 +53,5 @@ function getNewAge(age){
   age = age + 1;
   return age;
 }
+
+console.log(getNewAge(age));  // returns 11. age here refers to the value of age within the getNewAge function.
