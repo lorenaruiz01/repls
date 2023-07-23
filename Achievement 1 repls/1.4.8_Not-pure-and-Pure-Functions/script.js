@@ -55,3 +55,4 @@ function getNewAge(age){
 }
 
 console.log(getNewAge(age));  // returns 11. age here refers to the value of age within the getNewAge function.
+console.log(age); //returns 10. age here refers to value of age variable. 
