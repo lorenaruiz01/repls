@@ -24,3 +24,8 @@ function getNewAgePure(age) {
 console.log('The output of "getNewAgePure" function:'+ ' ' + (getNewAgePure(age))); //return 11
 console.log('Value of "age" after function execution:' + ' ' + age); //returns  10
 */
+
+
+
+// ALTERNATE EXPLANATION -------------- 
+
