@@ -27,4 +27,7 @@ function hello(){
   alert('Hello World!');
 }
 
+// However, simply declaring the function doesn't do anything. In order to run the code inside the function, you have to call it. Calling a function will run the block of code inside the functions body. to call the function hello(), type hello(); and press enter. This produces an alert box with the message 'Hello World!'
+
+hello();
 
