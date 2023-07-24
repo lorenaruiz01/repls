@@ -57,3 +57,16 @@ function goodbye(){
 // you can call a function expression just like you call a function declaration, by using the name of the variable the function is assigned to: 
 
 goodbye();
+
+
+
+// Here is another example of a function expression, this time using parameters: 
+
+let addTwoNums = function(num1, num2) {
+  return num1 + num2
+};
+
+addTwoNums(3,8);
+
+
+
