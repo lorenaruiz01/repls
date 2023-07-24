@@ -12,4 +12,3 @@ let dog = {
 dog.speak();
 
 // when dog.speak() is called, it calls the function named speak and runs the code inside the speak property. 
-
