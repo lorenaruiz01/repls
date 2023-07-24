@@ -27,13 +27,17 @@ function displayHi(){
 
 // Hoisting only works if you declare functions by starting with the [function] keyword. This style of function creation is called function declaration.
 
-// A function declaration starts with the [function] keyword, then the name of the function, followed by () parentheses, either empty or with parameters. Then curly braces {} with code inside the curly braces:
+// A FUNCTION DECLARATION starts with the [function] keyword, then the name of the function, followed by () parentheses, either empty or with parameters. Then curly braces {} with code inside the curly braces:
 
 function hello(){
   alert('Hello World!');
-}
+}   // function declarations don't need semi-colons after the closing curly brace!
 
 // However, simply declaring the function doesn't do anything. In order to run the code inside the function, you have to call it. Calling a function will run the block of code inside the functions body. to call the function hello(), type hello(); and press enter. This produces an alert box with the message 'Hello World!'
 
-hello();
+hello();    // alert box with Hello World! message
+
+
+
+// With FUNCTION EXPRESSIONS, functions are assigned directly to the variables rather than being declared using the function keyword. In these cases, you don't need a function name, just function (). But you do need a semi-colon after the closing curly brace!
 
