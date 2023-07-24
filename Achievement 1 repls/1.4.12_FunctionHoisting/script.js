@@ -69,4 +69,12 @@ let addTwoNums = function(num1, num2) {
 addTwoNums(3,8);
 
 
+// Here is an example of a function expression in which a function is assigned to an object property.
+let person = {};
 
+person.tellMyAge = function() {
+  return 42
+};
+
+
+// Keep in mind that in function expressions, since you are declaring a variable, you need to use a semi-colon to end the assignment statement code. 
