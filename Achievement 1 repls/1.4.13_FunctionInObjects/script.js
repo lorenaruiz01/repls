@@ -1,3 +1,5 @@
+// in the example below, a function is assigned to an object's property. the object property, speak, is being assigned to the function () {console.log('wooff)!'};
+
 let dog = {
   type: 'pug',
   age: 3,
@@ -9,5 +11,5 @@ let dog = {
 
 dog.speak();
 
-// The [this] keyword refers to an object, that object which is executing the current bit of javascript code. In other words, the [this] keyword can be used inside an object to refer to the object itself. It is often used in methods to gain access to the object's properties. 
+// when dog.speak() is called, it calls the function named speak and runs the code inside the speak property. 
 
