@@ -41,3 +41,19 @@ hello();    // alert box with Hello World! message
 
 // With FUNCTION EXPRESSIONS, functions are assigned directly to the variables rather than being declared using the function keyword. In these cases, you don't need a function name, just function (). But you do need a semi-colon after the closing curly brace!
 
+// A function expression assigns an "anonymous function" to a variable. An anonymous function is created using the same function declaration we used earlier but it doesn't have a name assigned to it. Instead, the function is assigned to a variable that is used to refer to the function. 
+
+const goodbye = function(){
+  alert('Goodbye, World!');
+};
+
+// the function declaration version of this would be:
+
+function goodbye(){
+  alert('Goodbye, World!');
+}
+
+
+// you can call a function expression just like you call a function declaration, by using the name of the variable the function is assigned to: 
+
+goodbye();
