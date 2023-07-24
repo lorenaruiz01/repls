@@ -78,3 +78,11 @@ person.tellMyAge = function() {
 
 
 // Keep in mind that in function expressions, since you are declaring a variable, you need to use a semi-colon to end the assignment statement code. 
+
+// Second, if you decide to use a function expression, hoisting will no longer work so the order of the code does matter. The function needs to be declared before it can be executed:
+
+let addTwoNums = function(num1, num2) {
+  return num1 + num2
+};
+
+addTwoNums(num1,num2);
