@@ -19,6 +19,8 @@ function displayHi(){
   console.log("Hi There");
 }
 
+// Hoisting only works if you declare functions by starting the [function] keyword. This style of function creation is called function declaration.
+
 
 
 
