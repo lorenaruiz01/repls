@@ -31,3 +31,10 @@ const square = {
   area() { return this.length * this.length }
 }
 
+// the perimeter and area properties have now been changed to methods that return the desured value. 
+
+// calling these methods should give us the same results as when the corresponding properties were hard-coded earlier: 
+
+square.perimeter();   // returns 20
+
+square.area();        // returns 25
