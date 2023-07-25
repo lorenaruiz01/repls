@@ -22,5 +22,12 @@ const square = {
 
 // the problem with this object is that all the information about the square is hard-cded as properties. This isn't necessary since we can use methods to calculate the perimeter and area based on the values of the sides and length properties. We can use this to gain acces to those properties. 
 
+// here is the example above, re-written using the this keyword: 
 
+const square = {
+  sides: 4, 
+  length: 5,
+  perimeter() { return this.sides * this.length },
+  area() { return this.length * this.length }
+}
 
