@@ -8,13 +8,15 @@ const FOO = (function () {
   
 	return "I am the return value and I am a string"
 	
-})
+}())
 // Write your code above this line
 
 
+// added () between } and ). The () makes the function a self-invoking function, which returns the value of FOO, which is a string. 
 
+// console logs the following: 
 
-
+"Congratulations! Foo has a value of 'I am the return value and I am a string' and is of datatype string!"
 
 
 
