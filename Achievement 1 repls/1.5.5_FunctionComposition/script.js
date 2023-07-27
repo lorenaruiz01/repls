@@ -1,4 +1,4 @@
-var pug = {
+const pug = {
   age: 4,
   hasPups: false,
   name: 'Fred'
