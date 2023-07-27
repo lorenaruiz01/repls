@@ -1,0 +1,60 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.card {
+	margin: 20px auto;
+	max-width: 500px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+	padding: 10px;
+}
+pre {
+	 background: #ffeff0;
+  word-wrap: break-word;
+  box-decoration-break: clone;
+  padding: .1rem .3rem .2rem;
+  border-radius: .2rem;
+}
+.card h5 {
+	font-size: 1.25rem;
+	padding-bottom: 0;
+	margin-bottom: 0;
+
+}
+.card h6 {
+	font-size: 1.05rem;
+	padding-top: 0;
+	margin-top: 0;
+	font-style: italic;
+	text-align: right;
+
+}
+.card button {
+	color: rgba(17, 69, 238, 1);
+	font-weight: bold;
+	background: none;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	display: block;
+	text-align: right;
+	font-style: italic;
+	border-bottom: 1px solid blue;
+	margin-bottom: 10px;
+}
+
+.collapse {
+	padding:15px;
+	max-height: 0;
+	font-size: 0;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.collapse.show {
+	padding:15px;
+	max-height: 300px;
+	font-size: 12px;
+	opacity: 1;
+}

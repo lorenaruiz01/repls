@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+<h1>Let's really dig into what we've been learning about IIFEs. Remember: no return statement, nothing gets sent out!</h1>
+<div class="card">
+<h5 class="card-title">Example 1</h5>
+  <div class="card-body">
+    <pre>
+      let answer1 = (function(){
+        return 1 + 1
+      })()
+    </pre>
+    <button 
+      class="btn btn-primary" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#collapseExample" 
+      aria-expanded="false" 
+      aria-controls="collapseExample">
+      what is the value of answer1? 
+    </button>
+    <div class="collapse" id="collapseExample">
+    answer1 is 2
+    </div>
+  </div>
+</div>
+
+    <div class="card">
+<h5 class="card-title">Example 2</h5>
+  <div class="card-body">
+    <pre>
+      let answer2 = (function(){
+        1 + 1
+      })()
+    </pre>
+    <button 
+      class="btn btn-primary" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#collapseExample2" 
+      aria-expanded="false" 
+      aria-controls="collapseExample2">
+      what is the value of answer2? 
+    </button>
+    <div class="collapse" id="collapseExample2">
+    answer2 is undefined
+    </div>
+  </div>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
