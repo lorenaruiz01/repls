@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+<h1>Remember in an object you have key value pairs -- remember which is which!</h1>
+<div class="container">
+<div class="card">
+<h5 class="card-title">Example 1</h5>
+<h6>Please note which is the KEY in an object and which is the VALUE.</h6>
+  <div class="card-body">
+    <pre>
+		const FunctionOne = (function () {
+  
+			function <span class="value">internalFunctionValue</span> () {
+			  console.log('function one internal function called' )
+			}
+			return {
+			  <span class="key">internalFunctionKey</span>:  <span class="value">internalFunctionValue</span>
+			}
+			
+		  })()
+		  FunctionOne.<span class="key">internalFunctionKey()</span>
+    </pre>
+  </div>
+</div>
+
+<div class="card">
+<h5 class="card-title">Example 2</h5>
+<h6>Because sometimes the KEY and the VALUE are the same word.</h6>
+	<div class="card-body">
+	<pre>
+		const FunctionOne = (function () {
+
+			function <span class="value">internalFunction</span> () {
+				console.log('function one internal function called' )
+			}
+			return {
+				<span class="key">internalFunction</span>:  <span class="value">internalFunction</span>
+			}
+
+		})()
+		FunctionOne.<span class="key">internalFunction()</span>
+	</pre>
+	</div>
+</div>
+<div class="card">
+	<h5 class="card-title">Example 3</h5>
+	<h6>And if they are the same word, you can use shorthand and only type the word once!</h6>
+		<div class="card-body">
+		<pre>
+			const FunctionOne = (function () {
+	
+				function <span class="value">internalFunction</span> () {
+					console.log('function one internal function called' )
+				}
+				return {
+					<span class="unified">internalFunction</span>
+				}
+	
+			})()
+			FunctionOne.<span class="key">internalFunction()</span>
+		</pre>
+		</div>
+	</div>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
