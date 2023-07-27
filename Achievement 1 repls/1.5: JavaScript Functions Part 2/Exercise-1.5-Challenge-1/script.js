@@ -10,7 +10,9 @@ const FOO = (function () {
   }
 	// Write your code above this line
 })()
-  
+
+
+// added return {} to the function to make it an object.
 
 // running the above code will log the following to the console: 
 
