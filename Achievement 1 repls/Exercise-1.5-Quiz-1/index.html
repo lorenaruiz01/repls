@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+<h1>Let's de-mystify IIFEs, step by step (click the questions to see the answers)</h1>
+<div class="container">
+<div class="card">
+<h5 class="card-title">Example 1</h5>
+  <div class="card-body">
+    <pre>
+      function ItemOne () { 
+
+      }
+    </pre>
+    <button 
+      class="btn btn-primary" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#collapseExample" 
+      aria-expanded="false" 
+      aria-controls="collapseExample">
+      what is the datatype of ItemOne? 
+    </button>
+    <div class="collapse" id="collapseExample">
+    ItemOne is a function
+    </div>
+  </div>
+</div>
+
+<div class="card">
+<h5 class="card-title">Example 2</h5>
+  <div class="card-body">
+    <pre>
+      let ItemTwo = function () {
+
+      }
+    </pre>
+    <button 
+      class="btn btn-primary" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#collapseExample2" 
+      aria-expanded="false" 
+      aria-controls="collapseExample">
+      what is the datatype of ItemTwo? 
+    </button>
+    <div class="collapse" id="collapseExample2">
+    	ItemTwo is also a function!
+    </div>
+  </div>
+</div>
+
+<div class="card">
+<h5 class="card-title">Example 3 </h5>
+<h6 class="card-title">(Time to really pay attention)</h6>
+  <div class="card-body">
+    <pre>
+      let ItemThree = function() {
+      
+      }();
+    </pre>
+    <button 
+      class="btn btn-primary" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#collapseExample3" 
+      aria-expanded="false" 
+      aria-controls="collapseExample">
+      what is the datatype of ItemThree? 
+    </button>
+    <div class="collapse" id="collapseExample3">
+    <p>ItemThree is undefined!</p>
+	<p>Please take a second to and compare this with ItemTwo -- what has changed?  Why does ItemTwo have a value and why is ItemThree undefined?</p>
+      <p>Since we've added the parentheses on the end of the function, the function is called!  It is a self-executing function. But then why is the variable "ItemThree" undefined?  Because there is no return statement!  A return statement sends the value outside the function.  Since there's no return statement, ItemThree remains undefined.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+<h5 class="card-title">Example 4</h5>
+  <div class="card-body">
+    <pre>
+      let ItemFour = function() { 
+        return "hello world!" 
+      }();
+    </pre>
+    <button 
+      class="btn btn-primary" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#collapseExample4" 
+      aria-expanded="false" 
+      aria-controls="collapseExample">
+      what is the datatype of ItemFour? 
+    </button>
+    <div class="collapse" id="collapseExample4">
+    <p>ItemFour is a string.</p>
+	<p>Here, when the function self-executes, the return statement sends the string outside the function to get resolved into the variable "ItemFour".</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+<h5 class="card-title">Example 5</h5>
+  <div class="card-body">
+    <pre>
+      let ItemFive = function() {
+        return {};
+      }();
+    </pre>
+    <button 
+      class="btn btn-primary" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#collapseExample5" 
+      aria-expanded="false" 
+      aria-controls="collapseExample">
+      what is the datatype of ItemFive? 
+    </button>
+    <div class="collapse" id="collapseExample5">
+    ItemFive is an object.
+    </div>
+  </div>
+</div>
+
+<div class="card">
+<h5 class="card-title">Example 6</h5>
+<h6 class="card-title">(This is the format of the IIFE from the curriculum)</h6>
+  <div class="card-body">
+    <pre>
+      let ItemSix = (function() { 
+        return {}
+      })();
+    </pre>
+    <button 
+      class="btn btn-primary" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#collapseExample6" 
+      aria-expanded="false" 
+      aria-controls="collapseExample">
+      what is the datatype of ItemSix? 
+    </button>
+    <div class="collapse" id="collapseExample6">
+    ItemSix is an object and is the return value of the IIFE in the format you are used to seeing.
+    </div>
+  </div>
+</div>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
