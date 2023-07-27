@@ -35,3 +35,27 @@ function getPersonDescription(person) {
 console.log(getPersonDescription(anne));    // returns: Anne Smith, 38 years old, has no children
 
 // However, there are many action being performed in the function which would be better split into multiple small functions. Doing so woudl make the code more composable, allowing for easy reuse and recombination of its functions:
+
+let anne = {
+  name: 'Anne Smith', 
+  age: 38,
+  hasChildren: false
+};
+
+function getAgeDescription(age) {
+  return age + 'years old';
+}
+
+function getChildrenDescription(hasChildren) {
+  return hasChildren ? 'has children' : 'has no children';
+}
+
+function getPersonDescription(person) {
+  let ageDescription = getAgeDescription(person.age);
+  let childrenDescription = getChildrenDescription(person.hasChildren);
+
+  return person.name + ', ' + ageDescription + ', ' + childrenDescription;
+}
+
+console.log(getPersonDescription(anne));
+// returns: Anne Smith, 38 years old, has no children
