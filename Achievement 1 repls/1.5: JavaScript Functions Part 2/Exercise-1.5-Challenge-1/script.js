@@ -12,7 +12,9 @@ const FOO = (function () {
 })()
   
 
+// running the above code will log the following to the console: 
 
+'Yes!  Go you!  FOO is of datatype object!'
 
 
 
