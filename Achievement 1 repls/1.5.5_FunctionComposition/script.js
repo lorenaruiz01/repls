@@ -5,6 +5,9 @@ const pug = {
 };
 // This code is missing a function. Can you identify the missing function and add it to get a console output?
 
+function getAgeDescription(age) {
+   return age + ' years old';
+}
 
 function getPupDescription(hasPups) {
    return hasPups ? 'has pups' : 'has no pups';
