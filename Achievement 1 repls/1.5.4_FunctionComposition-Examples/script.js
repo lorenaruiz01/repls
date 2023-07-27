@@ -59,3 +59,28 @@ function getPersonDescription(person) {
 
 console.log(getPersonDescription(anne));
 // returns: Anne Smith, 38 years old, has no children
+
+
+
+// the getPersonDescription() function has the same input and output as before, but in between, each specific functionality has been split into individual dedicated functions, which has some advantages: 
+
+// First, the getPersonDescription() function is now much easier to read. The function names themselves are descriptive, allowing you to quickly grasp what each one of them does.
+
+// Secondly, these new "sub-functions" can also be used by other functions. For instance, you may at some point write a getDogDescription() function where you could reuse some of the same sub-functions:
+
+let pug = {
+  age: 4,
+  hasPups: false,
+  name: 'Fred'
+};
+
+function getPupDescription(hasPups) {
+  return hasPups ? 'has pups' : 'has no pups';
+}
+
+function getDogDescription(dog){
+  let ageDescription = getAgeDescription(dog.age);
+  let pupDescription = getPupDescription(dog.hasPups);
+
+  return dog.name + ', ' + ageDescription + ', ' + pupDescription;
+}
