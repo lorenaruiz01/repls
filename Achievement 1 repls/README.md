@@ -1,2 +1,0 @@
-# repls
- replit practice exercises
