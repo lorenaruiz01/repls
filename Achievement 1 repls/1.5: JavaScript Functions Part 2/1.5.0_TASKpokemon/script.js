@@ -65,39 +65,46 @@ pokemonList.forEach(function (pokemon) {
 // 2. Before anything else, create a new pokemonRepository variable to hold what your IIFE will return, then assign the IIFE to that variable.
 
 let pokemonRepository = (function () {
-let pokemonList = [
-  {
-    name: 'bulbasaur', 
-    height: 0.7, 
-    types: ['grass', 'poison'],
-  }, 
-  {
-    name: 'charizard', 
-    height: 1.7, 
-    types: ['fire', 'flying'],
-  }, 
-  {
-    name: 'squirtle', 
-    height: 1, 
-    types: ['water'],
-  }
-];
+  let pokemonList = [
+    {
+      name: 'bulbasaur', 
+      height: 0.7, 
+      types: ['grass', 'poison'],
+    }, 
+    {
+      name: 'charizard', 
+      height: 1.7, 
+      types: ['fire', 'flying'],
+    }, 
+    {
+      name: 'squirtle', 
+      height: 1, 
+      types: ['water'],
+    }
+  ];
 
-let pokemonList2 = [
-  {
-    name: 'weedle',
-    height: 3,
-    types: ['bug', 'poison'],
-  },
-  {
-    name: 'pikachu',
-    height: 4,
-    types: ['electric'],
-  },
-  {
-    name: 'jigglypuff',
-    height: 5,
-    types:['normal','fairy'],
+  let pokemonList2 = [
+    {
+      name: 'weedle',
+      height: 3,
+      types: ['bug', 'poison'],
+    },
+    {
+      name: 'pikachu',
+      height: 4,
+      types: ['electric'],
+    },
+    {
+      name: 'jigglypuff',
+      height: 5,
+      types:['normal','fairy'],
+    }
+  ]
+
+
+
+  return {
+    getAll: getAll,
+    add:add
   }
-]
 }) ();
