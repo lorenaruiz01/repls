@@ -8,13 +8,15 @@ const FOO = (function () {
 	  console.log('InternalMethod called! Victory!')
 	}
 	// Write your code below this line
-	return {}
+	return {
+		internalMethod: internalMethod
+		// name of function : value of function
+	}
 	// Write your code above this line
 	
   })()
 
-
-
+// added:  internalMethod: internalMethod to line 12. This is a key-value pair that uses the function as a key to access the value of the named function. in this case, the key is internalMethod (to the left of :) which then is able to access the function internalMethod(). The value of the function is then the internalMethod to the right of the :, which pulls in the value of the named function.  
 
 
 
