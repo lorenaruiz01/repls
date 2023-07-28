@@ -64,7 +64,8 @@ pokemonList.forEach(function (pokemon) {
 
 // 2. Before anything else, create a new pokemonRepository variable to hold what your IIFE will return, then assign the IIFE to that variable.
 
-let pokemonRepository = (function () {
+
+let pokemonRepository = (function () {    // wrapping pokemonList array inside of an IIFE (Immediately Invoked Function Expression)
   let pokemonList = [
     {
       name: 'bulbasaur', 
@@ -105,6 +106,9 @@ let pokemonRepository = (function () {
     return pokemonList;
   }
 
+  function add (pokemon) {
+    pokemonList.push(pokemon);
+  }
 
   return {
     getAll: getAll,
