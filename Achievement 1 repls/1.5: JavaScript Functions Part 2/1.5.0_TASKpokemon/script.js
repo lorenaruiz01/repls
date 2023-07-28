@@ -102,16 +102,16 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     }
   ]
 
-  function getAll () {
+  function getAll () {    // this function returns all items in the pokemonList array
     return pokemonList;
   }
 
-  function add (pokemon) {
+  function add (pokemon) {    // this function adds the selected pokemon to the array
     pokemonList.push(pokemon);
   }
 
-  return {
-    getAll: getAll,
-    add:add
+  return {    // this returns an object with the value of the getAll and the add function
+    getAll: getAll,   // getAll: is the key that calls the function and returns the value of the same name (key : value)
+    add:add       // add: is the key that calls the function and returns the value of the same name (key : value)
   }
 }) ();
