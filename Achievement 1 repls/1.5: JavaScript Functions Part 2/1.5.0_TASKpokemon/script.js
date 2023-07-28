@@ -105,6 +105,8 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 // getAll: return all items (pokemonRepository.getAll(); should return the pokemonList array)
 // add: add a single item to the pokemonList array (calling pokemonRepository.add(item); should add the Pokémon referred to with item to the pokemonList array)
 
+// 4. Make sure both functions are defined separately with the function keyword. Also, the IIFE returns only an object with the same names for keys as values (see the last paragraph of the Exercise)
+
   function getAll () {    // this function returns all items in the pokemonList array
     return pokemonList;
   }
