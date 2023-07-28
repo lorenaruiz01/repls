@@ -122,8 +122,19 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 }) ();        // the (); makes this a self-executing function
 
 
-// Outside of and below the IIFE, you should already have a forEach() loop that iterates over each Pokémon in the repository. But since you’ve limited access to the pokemonList array that’s inside the IIFE (so that it’s only accessible through one of the two functions returned by the IIFE), you need to update the loop code to cope with the new changes. Essentially, you need to use one of the two functions returned by the IIFE in order to retrieve the pokemonList array.
+// 5. Outside of and below the IIFE, you should already have a forEach() loop that iterates over each Pokémon in the repository. But since you’ve limited access to the pokemonList array that’s inside the IIFE (so that it’s only accessible through one of the two functions returned by the IIFE), you need to update the loop code to cope with the new changes. Essentially, you need to use one of the two functions returned by the IIFE in order to retrieve the pokemonList array.
 
 pokemonRepository.getAll().forEach(function (pokemon) {
   console.log(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
 });
+
+// Bonus Task: 
+// You may have noticed that the add() function lets you add anything to pokemonList within the repository. You can even add strings or numbers. That’s not good. In a real application, you’d want to make sure pokemonList can only be modified with the correct type of data. Inside the addv function, you can check if the typeof parameter is an object. In combination with a conditional, make sure you can only add the passed argument of the function to pokemonList if it’s an object.
+
+function add (pokemon) {
+  if (pokemon === typeof Object) {
+    pokemonList.push(pokemon)
+  } else {
+    console.log('pokemon cannot be pushed to pokemonList')
+  }  
+}
