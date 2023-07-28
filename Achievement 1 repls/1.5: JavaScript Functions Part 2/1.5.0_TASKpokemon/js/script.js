@@ -129,12 +129,39 @@ pokemonRepository.getAll().forEach(function (pokemon) {
 });
 
 // Bonus Task: 
-// You may have noticed that the add() function lets you add anything to pokemonList within the repository. You can even add strings or numbers. That’s not good. In a real application, you’d want to make sure pokemonList can only be modified with the correct type of data. Inside the addv function, you can check if the typeof parameter is an object. In combination with a conditional, make sure you can only add the passed argument of the function to pokemonList if it’s an object.
+// 1. You may have noticed that the add() function lets you add anything to pokemonList within the repository. You can even add strings or numbers. That’s not good. In a real application, you’d want to make sure pokemonList can only be modified with the correct type of data. Inside the addv function, you can check if the typeof parameter is an object. In combination with a conditional, make sure you can only add the passed argument of the function to pokemonList if it’s an object.
+// 2. In addition to the type, you can also validate whether all Object.keys() of the parameter are equal to the specific keys you expect.
 
 function add (pokemon) {
-  if (typeof pokemon === 'object') {
+  if (typeof pokemon === 'object' && 
+      Object.keys(pokemon).includes('name') &&
+      Object.keys(pokemon).includes('height') &&
+      Object.keys(pokemon).includes('types')
+  ) {
     pokemonList.push(pokemon)
   } else {
     console.log('pokemon cannot be pushed to pokemonList')
   }  
 }
+
+
+// 3. take a look at how the filter() function works and create a whole new public function for pokemonRepository that allows you to find specific Pokémon only by name.
+
+// not sure if this is correct
+function searchByName (pokemon) {
+  pokemonRepository.filter(function (pokemon) {
+  document.getElementById('input').toLowerCase.value; 
+  });
+  if (value === Object.keys(pokemon).includes('name')){
+    return pokemon.name;
+  } else{
+    console.log('pokemon could not be found')
+  }; 
+}
+
+// Or
+
+// not sure if this is correct
+// let pokemonList = [];
+let searchByName = pokemonList.filter(pokemon => pokemon.name);
+console.log(searchByName);
