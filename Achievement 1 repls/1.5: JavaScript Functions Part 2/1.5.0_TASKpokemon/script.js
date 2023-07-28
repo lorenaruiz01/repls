@@ -101,6 +101,9 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
       types:['normal','fairy'],
     }
   ]
+// 3. The IIFE should return an object with the following public functions assigned as keys:
+// getAll: return all items (pokemonRepository.getAll(); should return the pokemonList array)
+// add: add a single item to the pokemonList array (calling pokemonRepository.add(item); should add the Pokémon referred to with item to the pokemonList array)
 
   function getAll () {    // this function returns all items in the pokemonList array
     return pokemonList;
