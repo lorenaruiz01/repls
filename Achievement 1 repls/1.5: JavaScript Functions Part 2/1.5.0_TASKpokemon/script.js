@@ -114,4 +114,4 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     getAll: getAll,   // getAll: is the key that calls the function and returns the value of the same name (key : value)
     add:add       // add: is the key that calls the function and returns the value of the same name (key : value)
   }
-}) ();
+}) ();        // the (); makes this a self-executing function
