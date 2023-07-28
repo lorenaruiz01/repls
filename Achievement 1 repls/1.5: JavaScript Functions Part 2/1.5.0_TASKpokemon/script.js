@@ -54,3 +54,7 @@ let pokemonList = [
 
 // Use a forEach() function instead of the for loop you have to iterate over the Pokémon in your pokemonList array in order to print the details of each one. We recommend revisiting and carefully studying the userList example in this Exercise before doing this part of the task. Commit and push the changes to your GitHub repository.
 
+pokemonList.forEach(function (pokemon) {
+  console.log(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
+});
+
