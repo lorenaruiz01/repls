@@ -40,8 +40,16 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
   }
 
   function add (pokemon) {    // this function adds the selected pokemon to the array
-    pokemonList.push(pokemon);
-  }
+    if (typeof pokemon === 'object' &&    // checks whether pokemon is an object
+      Object.keys(pokemon).includes('name') &&      // checks that pokemon object includes name key
+      Object.keys(pokemon).includes('height') &&    // checks that pokemon object includes height key
+      Object.keys(pokemon).includes('types')        // checks that pokemon object includes types key
+  ) {
+    pokemonList.push(pokemon)
+  } else {
+    console.log('pokemon cannot be pushed to pokemonList')
+  }  
+}
 
   return {    // this returns an object with the value of the getAll and the add function
     getAll: getAll,   // getAll: is the key that calls the function and returns the value of the same name (key : value)
@@ -54,17 +62,6 @@ pokemonRepository.getAll().forEach(function (pokemon) {
   console.log(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
 });
 
-function add (pokemon) {
-  if (typeof pokemon === 'object' && 
-      Object.keys(pokemon).includes('name') &&
-      Object.keys(pokemon).includes('height') &&
-      Object.keys(pokemon).includes('types')
-  ) {
-    pokemonList.push(pokemon)
-  } else {
-    console.log('pokemon cannot be pushed to pokemonList')
-  }  
-}
 
 // not sure if this is correct
 function searchByName (pokemon) {
