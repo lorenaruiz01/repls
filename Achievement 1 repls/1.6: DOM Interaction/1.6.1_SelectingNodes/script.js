@@ -1,7 +1,7 @@
 /* COMPLETE THE CODE BELOW BY FOLLOWING THE INSTRUCTIONS */
 
 // 1. Select and assign only the payments div:
-let payments = document.querySelector('.payments')
+let payments = document.querySelector('.payments');
     
 // 2. Select and assign all divs with the class 'amount' INSIDE (!) the payments div
 let amountsOfPayments = payments.querySelectorAll('.amount'); 
