@@ -17,23 +17,6 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     }
   ];
 
-  let pokemonList2 = [
-    {
-      name: 'weedle',
-      height: 3,
-      types: ['bug', 'poison'],
-    },
-    {
-      name: 'pikachu',
-      height: 4,
-      types: ['electric'],
-    },
-    {
-      name: 'jigglypuff',
-      height: 5,
-      types:['normal','fairy'],
-    }
-  ]
 
   function getAll () {    // this function returns all items in the pokemonList array
     return pokemonList;
@@ -51,9 +34,18 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
   }  
 }
 
+function searchByName(name) {
+  name = name.toLowerCase();
+  return pokemonList.filter(function (pokemon){
+    return pokemon.name.toLowerCase() === name;
+  });
+}
+
+
   return {    // this returns an object with the value of the getAll and the add function
     getAll: getAll,   // getAll: is the key that calls the function and returns the value of the same name (key : value)
-    add:add       // add: is the key that calls the function and returns the value of the same name (key : value)
+    add:add,       // add: is the key that calls the function and returns the value of the same name (key : value)
+    searchByName: searchByName // Adding the searchByName function to the returned object
   }
 }) ();        // the (); makes this a self-executing function
 
@@ -61,23 +53,3 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 pokemonRepository.getAll().forEach(function (pokemon) {
   console.log(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
 });
-
-
-// not sure if this is correct
-function searchByName (pokemon) {
-  pokemonRepository.filter(function (pokemon) {
-  document.getElementById('input').toLowerCase.value; 
-  });
-  if (value === Object.keys(pokemon).includes('name')){
-    return pokemon.name;
-  } else{
-    console.log('pokemon could not be found')
-  }; 
-}
-
-// Or
-
-// not sure if this is correct
-// let pokemonList = [];
-let searchByName = pokemonList.filter(pokemon => pokemon.name);
-console.log(searchByName);
