@@ -35,7 +35,8 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 
   function addListItem(pokemon) {
    
-
+    let pokemonList = document.querySelector('ul');
+    
   }
 
 // Might try to implement this as a seach feature later
