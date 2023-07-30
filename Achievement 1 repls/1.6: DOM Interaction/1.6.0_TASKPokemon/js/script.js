@@ -50,6 +50,8 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 
     // add listItem to pokemonList
     pokemonList.appendChild(listItem);
+
+    document.write(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
   }
 
   return {    // this returns an object with the value of the getAll and the add function
