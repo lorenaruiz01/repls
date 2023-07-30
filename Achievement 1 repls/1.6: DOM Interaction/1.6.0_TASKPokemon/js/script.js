@@ -33,6 +33,7 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     return pokemonList;
   }
 
+  
   function addListItem(pokemon) {
     // assign ul element to pokemonList variable
     let pokemonList = document.querySelector('ul');
@@ -51,12 +52,13 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     // add listItem to pokemonList
     pokemonList.appendChild(listItem);
 
-    document.write(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
   }
-
+  
   pokemonList.forEach(function (pokemon) {
 
-  });
+});
+  
+
 
   return {    // this returns an object with the value of the getAll and the add function
     getAll: getAll,   // getAll: is the key that calls the function and returns the value of the same name (key : value)
