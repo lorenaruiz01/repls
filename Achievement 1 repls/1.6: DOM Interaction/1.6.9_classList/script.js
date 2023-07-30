@@ -12,4 +12,4 @@ container.classList.remove('selected');
 container.classList.toggle('selected');
 
 // to toggle the class off
-// container.classList.toggle('selected');
+container.classList.toggle('selected');
