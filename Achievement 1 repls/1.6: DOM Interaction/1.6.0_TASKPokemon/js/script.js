@@ -40,7 +40,8 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     let button = document.createElement('button');
     button.innerText = pokemon.name;
     button.classList.add('button-class');
-
+    listItem.appendChild(button);
+    pokemonList.appendChild(listItem);
   }
 
 // Might try to implement this as a seach feature later
@@ -51,11 +52,15 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 //   });
 // }
 
+// add the following to the return function if decide to implement the search feature later
+//     searchByName: searchByName // Adding the searchByName function to the returned object
+
+
 
   return {    // this returns an object with the value of the getAll and the add function
     getAll: getAll,   // getAll: is the key that calls the function and returns the value of the same name (key : value)
     add:add,       // add: is the key that calls the function and returns the value of the same name (key : value)
-    searchByName: searchByName // Adding the searchByName function to the returned object
+    addListItem: addListItem
   }
 }) ();        // the (); makes this a self-executing function
 
@@ -72,6 +77,7 @@ function printArrayDetails(list){
 
 
 pokemonRepository.getAll().forEach(function (pokemon) {
+  
 
   // create an li element
   let listItem = document.createElement('li');
