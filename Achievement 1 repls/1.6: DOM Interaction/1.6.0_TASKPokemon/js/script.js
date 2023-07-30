@@ -59,25 +59,12 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
   }
 }) ();        // the (); makes this a self-executing function
 
-
-
-    
-  pokemonList.forEach(function (pokemon) {
-    document.write(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
-  });
-
-
-
-
+pokemonList.forEach(function (pokemon) {
+  document.write(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
+});
 
 
 pokemonRepository.getAll().forEach(function (pokemon) {
-
-
-  let listItem = document.createElement('li');
-
-  let button = document.createElement('button').innerText.pokemon
-
+  pokemonRepository.addListItem(pokemon);
 });
 
-printArrayDetails(pokemonList);
