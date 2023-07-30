@@ -17,11 +17,6 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     }
   ];
 
-
-  function getAll () {    // this function returns all items in the pokemonList array
-    return pokemonList;
-  }
-
   function add (pokemon) {    // this function adds the selected pokemon to the array
     if (typeof pokemon === 'object' &&    // checks whether pokemon is an object
       Object.keys(pokemon).includes('name') &&      // checks that pokemon object includes name key
@@ -33,6 +28,12 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     console.log('pokemon cannot be pushed to pokemonList')
   }  
 }
+
+  function getAll () {    // this function returns all items in the pokemonList array
+    return pokemonList;
+  }
+
+  
 
 // Might try to implement this as a seach feature later
 // function searchByName(name) {
@@ -51,6 +52,17 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 }) ();        // the (); makes this a self-executing function
 
 
+function printArrayDetails(list){
+    
+  pokemonList.forEach(function (pokemon) {
+    document.write(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
+  });
+
+}
+
+
+
+
 pokemonRepository.getAll().forEach(function (pokemon) {
   pokemonList = document.querySelector('ul');
 
@@ -61,3 +73,5 @@ pokemonRepository.getAll().forEach(function (pokemon) {
   let button = document.createElement('button').innerText.pokemon
 
 });
+
+printArrayDetails(pokemonList);
