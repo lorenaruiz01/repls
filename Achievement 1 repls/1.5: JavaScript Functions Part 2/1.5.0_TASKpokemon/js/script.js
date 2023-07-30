@@ -20,7 +20,7 @@ let pokemonList = [
   function printArrayDetails(list){
     
     pokemonList.forEach(function (pokemon) {
-      console.log(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
+      document.write(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
     });
 
   }
