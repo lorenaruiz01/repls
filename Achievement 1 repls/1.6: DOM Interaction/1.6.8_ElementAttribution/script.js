@@ -1,3 +1,5 @@
+// for an element's attributes, there are a number of different functions you can use:
+
 let container = document.querySelector('.container');
 
 console.log(container.getAttribute('id')); // "main-section"
