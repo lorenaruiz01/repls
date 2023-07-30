@@ -57,6 +57,7 @@ pokemonRepository.getAll().forEach(function (pokemon) {
   // create an li element
   let listItem = document.createElement('li');
 
-  
+  // create a button element
+  let button = document.createElement('button').innerText.pokemon
 
 });
