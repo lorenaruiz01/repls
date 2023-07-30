@@ -36,6 +36,8 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
   function addListItem(pokemon) {
    
     let pokemonList = document.querySelector('ul');
+
+    // create an li element
     let listItem = document.createElement('li');
     let button = document.createElement('button');
     button.innerText = pokemon.name;
@@ -68,7 +70,6 @@ function printArrayDetails(list){
 pokemonRepository.getAll().forEach(function (pokemon) {
 
 
-  // create an li element
   let listItem = document.createElement('li');
 
   // create a button element
