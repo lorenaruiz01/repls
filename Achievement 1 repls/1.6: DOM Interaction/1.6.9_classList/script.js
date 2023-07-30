@@ -6,7 +6,7 @@ console.log(container.classList.contains('selected')); // false
 container.classList.add('selected');
 
 // uncomment the following line to revert the style, "simulating the effect of unselecting the element visually"
-// container.classList.remove('selected');
+container.classList.remove('selected');
 
 // to toggle the class on again
 // container.classList.toggle('selected');
