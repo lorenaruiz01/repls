@@ -95,7 +95,7 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 // 5. Outside of and below the IIFE, you should already have a forEach() loop that iterates over each Pokémon in the repository. But since you’ve limited access to the pokemonList array that’s inside the IIFE (so that it’s only accessible through one of the two functions returned by the IIFE), you need to update the loop code to cope with the new changes. Essentially, you need to use one of the two functions returned by the IIFE in order to retrieve the pokemonList array.
 
 pokemonRepository.getAll().forEach(function (pokemon) {
-  console.log(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
+  document.write(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
 });
 
 // Bonus Task: 
