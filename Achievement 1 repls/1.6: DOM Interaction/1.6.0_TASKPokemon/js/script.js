@@ -44,16 +44,7 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     pokemonList.appendChild(listItem);
   }
 
-// Might try to implement this as a seach feature later
-// function searchByName(name) {
-//   name = name.toLowerCase();
-//   return pokemonList.filter(function (pokemon){
-//     return pokemon.name.toLowerCase() === name;
-//   });
-// }
 
-// add the following to the return function if decide to implement the search feature later
-//     searchByName: searchByName // Adding the searchByName function to the returned object
 
 
 
@@ -77,7 +68,7 @@ function printArrayDetails(list){
 
 
 pokemonRepository.getAll().forEach(function (pokemon) {
-  
+
 
   // create an li element
   let listItem = document.createElement('li');
