@@ -60,13 +60,13 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 }) ();        // the (); makes this a self-executing function
 
 
-function printArrayDetails(list){
+
     
   pokemonList.forEach(function (pokemon) {
     document.write(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
   });
 
-}
+
 
 
 
