@@ -34,12 +34,13 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
   }  
 }
 
-function searchByName(name) {
-  name = name.toLowerCase();
-  return pokemonList.filter(function (pokemon){
-    return pokemon.name.toLowerCase() === name;
-  });
-}
+// Might try to implement this as a seach feature later
+// function searchByName(name) {
+//   name = name.toLowerCase();
+//   return pokemonList.filter(function (pokemon){
+//     return pokemon.name.toLowerCase() === name;
+//   });
+// }
 
 
   return {    // this returns an object with the value of the getAll and the add function
