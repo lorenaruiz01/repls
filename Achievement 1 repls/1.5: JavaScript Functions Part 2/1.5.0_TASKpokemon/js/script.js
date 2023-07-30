@@ -15,24 +15,7 @@ let pokemonList = [
       types: ['water'],
     }
   ];
-  
-  let pokemonList2 = [
-    {
-      name: 'weedle',
-      height: 3,
-      types: ['bug', 'poison'],
-    },
-    {
-      name: 'pikachu',
-      height: 4,
-      types: ['electric'],
-    },
-    {
-      name: 'jigglypuff',
-      height: 5,
-      types:['normal','fairy'],
-    }
-  ];
+
   
   function printArrayDetails(list){
     for (let i = 0; i < list.length; i++){
