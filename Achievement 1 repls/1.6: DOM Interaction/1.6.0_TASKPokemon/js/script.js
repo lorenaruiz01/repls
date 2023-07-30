@@ -52,5 +52,6 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 
 
 pokemonRepository.getAll().forEach(function (pokemon) {
-  console.log(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
+  document.write(pokemon.name + ' is ' + pokemon.height + ' feet tall.');
+  // pokemonList = document.querySelector('ul')
 });
