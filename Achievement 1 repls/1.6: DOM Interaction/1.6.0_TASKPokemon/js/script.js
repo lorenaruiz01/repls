@@ -53,12 +53,6 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     pokemonList.appendChild(listItem);
 
   }
-  
-  pokemonList.forEach(function (pokemon) {
-
-});
-  
-
 
   return {    // this returns an object with the value of the getAll and the add function
     getAll: getAll,   // getAll: is the key that calls the function and returns the value of the same name (key : value)
@@ -73,4 +67,3 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 pokemonRepository.getAll().forEach(function (pokemon) {
   pokemonRepository.addListItem(pokemon);
 });
-
