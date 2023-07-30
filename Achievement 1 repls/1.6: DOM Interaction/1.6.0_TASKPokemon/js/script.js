@@ -53,5 +53,10 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 
 pokemonRepository.getAll().forEach(function (pokemon) {
   pokemonList = document.querySelector('ul');
+
+  // create an li element
+  let listItem = document.createElement('li');
+
   
+
 });
