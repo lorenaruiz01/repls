@@ -27,7 +27,6 @@ let pokemonList = [
   
   
   printArrayDetails(pokemonList);
-  printArrayDetails(pokemonList2);
 
 
   for (let i = 0; i < list.length; i++){
