@@ -33,7 +33,10 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     return pokemonList;
   }
 
-  
+  function addListItem(pokemon) {
+   
+
+  }
 
 // Might try to implement this as a seach feature later
 // function searchByName(name) {
@@ -64,7 +67,6 @@ function printArrayDetails(list){
 
 
 pokemonRepository.getAll().forEach(function (pokemon) {
-  pokemonList = document.querySelector('ul');
 
   // create an li element
   let listItem = document.createElement('li');
