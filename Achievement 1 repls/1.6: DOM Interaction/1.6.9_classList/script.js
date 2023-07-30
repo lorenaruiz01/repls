@@ -9,7 +9,7 @@ container.classList.add('selected');
 container.classList.remove('selected');
 
 // to toggle the class on again
-// container.classList.toggle('selected');
+container.classList.toggle('selected');
 
 // to toggle the class off
 // container.classList.toggle('selected');
