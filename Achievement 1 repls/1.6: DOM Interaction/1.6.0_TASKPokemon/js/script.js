@@ -17,7 +17,7 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     }
   ];
 
-  function add (pokemon) {    // this function adds the selected pokemon to the array
+  function add (pokemon) {    // the add function adds the selected pokemon to the array
     if (typeof pokemon === 'object' &&    // checks whether pokemon is an object
       Object.keys(pokemon).includes('name') &&      // checks that pokemon object includes name key
       Object.keys(pokemon).includes('height') &&    // checks that pokemon object includes height key
@@ -29,12 +29,12 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
   }  
 }
 
-  function getAll () {    // this function returns all items in the pokemonList array
+  function getAll () {    // the getAll function returns all items in the pokemonList array
     return pokemonList;
   }
 
   
-  function addListItem(pokemon) {
+  function addListItem(pokemon) {       // the addListItem function adds a pokemon as a list item and button
     // assign ul element to pokemonList variable
     let pokemonList = document.querySelector('ul');
 
