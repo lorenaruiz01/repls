@@ -7,10 +7,10 @@ element.value = '2';
 
 // Uncomment the following code block to get the currently selected `option` element, you could do so like this:
 
-//let selectedIndex = element.selectedIndex;
-//if (selectedIndex > -1) {
-//  let selectedOption = element.querySelectorAll('option')[selectedIndex];
-//}
+let selectedIndex = element.selectedIndex;
+if (selectedIndex > -1) {
+ let selectedOption = element.querySelectorAll('option')[selectedIndex];
+}
 
 // For the radio buttons
 // Uncomment the following code block to find out which one of the three is currently selected
