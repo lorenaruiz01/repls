@@ -1,8 +1,8 @@
 // Uncomment the folowing code block to change the selected value (assuming the first option is selected by default)
 
-//let element = document.querySelector('select');
-//console.log(element.value); // returns '1' as that’s currently selected
-//element.value = '2';
+let element = document.querySelector('select');
+console.log(element.value); // returns '1' as that’s currently selected
+element.value = '2';
 
 
 // Uncomment the following code block to get the currently selected `option` element, you could do so like this:
