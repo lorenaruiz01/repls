@@ -5,3 +5,8 @@ button.addEventListener('click', function (event) {
   target.classList.toggle('button--red');
   target.classList.toggle('button--green');
 });
+
+// attempts: 
+
+// button.innerText = 'now i\'m green!';
+// button.innerText = 'now i\'m red!';
