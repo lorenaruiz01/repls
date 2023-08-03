@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+}
+div {
+  background-color: lightblue;
+}
+button {
+  margin: 30px;
+  height: 30px;
+  width: 100px;
+}
+.button--red { background-color: tomato; }
+.button--green { background-color: lightgreen; }
