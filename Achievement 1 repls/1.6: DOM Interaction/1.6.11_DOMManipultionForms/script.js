@@ -10,6 +10,7 @@ element.value = '2';
 let selectedIndex = element.selectedIndex;
 if (selectedIndex > -1) {
  let selectedOption = element.querySelectorAll('option')[selectedIndex];
+  console.log(selectedOption);
 }
 
 // For the radio buttons
