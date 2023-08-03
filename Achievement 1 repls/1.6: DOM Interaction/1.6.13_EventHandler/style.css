@@ -1,0 +1,8 @@
+.extra-content,
+button{
+  display: none;
+}
+
+.visible{
+  display: block;
+}
