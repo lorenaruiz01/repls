@@ -18,18 +18,4 @@ button.addEventListener('click', function (event) {
 // button.innerText = 'now i\'m green!';
 // button.innerText = 'now i\'m red!';
 
-let button = document.querySelector('button');
 
-button.addEventListener('click', function (event) {
-  let target = event.target;
-  
-  if (target.classList.contains('button--green')) {
-    target.classList.remove('button--green');
-    target.classList.add('button--red');
-    button.innerText = "now I'm red!";
-  } else if (target.classList.contains('button--red')) {
-    target.classList.remove('button--red');
-    target.classList.add('button--green');
-    button.innerText = "now I'm green";
-  }
-});
