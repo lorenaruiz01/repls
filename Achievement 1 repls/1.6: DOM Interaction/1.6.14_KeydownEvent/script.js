@@ -17,3 +17,11 @@ let survey_form = document.querySelector('#survey_form');
 
 let isFormHidden = survey_form.classList.contains('hidden');
 // This line of code checks whether the survey_form element has a CSS class named "hidden". The .classList.contains() method is used to determine if the class is present on the element. The result (true or false) is stored in the variable isFormHidden.
+
+if (!isFormHidden && event.key === 'Escape') { ... }
+// This is an if statement that checks two conditions:
+
+!isFormHidden 
+  // Checks if the form is not hidden (i.e., it is visible).
+event.key === 'Escape' 
+  // Checks if the key that was pressed is the "Escape" key.
