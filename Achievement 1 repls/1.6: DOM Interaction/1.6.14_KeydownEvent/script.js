@@ -27,3 +27,5 @@ if (!isFormHidden && event.key === 'Escape') { ... }
 
 survey_form.classList.add('hidden');
 // If both conditions in the if statement are true, this line of code adds the "hidden" CSS class to the survey_form element. This class presumably contains styles that make the form element visually hidden, such as display: none or visibility: hidden.
+
+// In summary, this code sets up an event listener that listens for key presses anywhere on the webpage. If the "Escape" key is pressed and the survey form is currently visible (not hidden), it hides the form by adding a "hidden" CSS class to it. This provides a way to close the survey form when the user presses the "Escape" key.
