@@ -5,3 +5,9 @@ window.addEventListener('keydown', function(event){
     survey_form.classList.add('hidden');   
   }
 });
+
+// explanation by chatgpt:
+// This code snippet is written in JavaScript and adds an event listener to the window object. The event being listened for is the "keydown" event, which occurs when a key on the keyboard is pressed down. Let's break down what this code does step by step:
+
+
+
