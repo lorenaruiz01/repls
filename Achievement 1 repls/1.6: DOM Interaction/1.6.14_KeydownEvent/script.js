@@ -20,8 +20,7 @@ let isFormHidden = survey_form.classList.contains('hidden');
 
 if (!isFormHidden && event.key === 'Escape') { ... }
 // This is an if statement that checks two conditions:
-
-!isFormHidden 
-  // Checks if the form is not hidden (i.e., it is visible).
-event.key === 'Escape' 
-  // Checks if the key that was pressed is the "Escape" key.
+  !isFormHidden 
+    // Checks if the form is not hidden (i.e., it is visible).
+  event.key === 'Escape' 
+    // Checks if the key that was pressed is the "Escape" key.
