@@ -1,0 +1,6 @@
+.additional-information {
+  display: none;
+}
+.additional-information.is-visible {
+  display: block;
+}
