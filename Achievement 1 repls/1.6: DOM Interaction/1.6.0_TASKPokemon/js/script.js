@@ -4,8 +4,7 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
       name: 'bulbasaur', height: 0.7, types: ['grass', 'poison'],
     }, 
     {
-      name: 'charizard', height: 1.7, 
-      types: ['fire', 'flying'],
+      name: 'charizard', height: 1.7, types: ['fire', 'flying'],
     }, 
     {
       name: 'squirtle', 
