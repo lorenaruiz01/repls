@@ -51,7 +51,10 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
   
       // add listItem to pokemonList
       pokemonList.appendChild(listItem);
-  
+    
+      button.addEventListener('click', () => {
+        showDetails(pokemon);
+      })
     }
   
     return {    // this returns an object with the value of the getAll and the add function
