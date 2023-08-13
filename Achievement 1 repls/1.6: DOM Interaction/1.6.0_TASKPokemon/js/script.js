@@ -1,8 +1,6 @@
 let pokemonRepository = (function () {    // wrapping pokemonList array inside of an IIFE (Immediately Invoked Function Expression)
   let pokemonList = [                     // an array of objects
-    {
-      name: 'bulbasaur', height: 0.7, types: ['grass', 'poison'],
-    }, 
+    { name: 'bulbasaur', height: 0.7, types: ['grass', 'poison'],}, 
     {
       name: 'charizard', height: 1.7, types: ['fire', 'flying'],
     }, 
