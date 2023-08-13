@@ -52,10 +52,11 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
       // add listItem to pokemonList
       pokemonList.appendChild(listItem);
     
+      // show pokemon details when user clicks on pokemon button
       button.addEventListener('click', () => {
         showDetails(pokemon);
-      })
-    }
+      }
+    )};
   
     return {    // this returns an object with the value of the getAll and the add function
       getAll: getAll,   // getAll: is the key that calls the function and returns the value of the same name (key : value)
