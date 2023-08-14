@@ -64,16 +64,16 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
         })
     }
   
-    function loadDetails(item) {
-        let url = item.detailsUrl;
+    function loadDetails(pokemon) {
+        let url = pokemon.detailsUrl;
         return fetch(url).then(function(response){
             return response.json();
         }).then(function(details) {
             //pokemon details
-            item.imageUrl = details.sprites.front_default;
-            item.height = details.height;
-            item.types = details.types;
-            showModal(item);
+            pokemon.imageUrl = details.sprites.front_default;
+            pokemon.height = details.height;
+            pokemon.types = details.types;
+            showModal(pokemon);
         }).catch(function(e){
             console.error(e);
         });
