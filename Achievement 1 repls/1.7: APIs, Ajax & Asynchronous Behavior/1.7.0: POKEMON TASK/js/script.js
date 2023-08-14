@@ -56,7 +56,7 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
                 let pokemon = {
                     name: item.name,
                     detailsUrl: item.url
-                }
+                };
                 add(pokemon);
             }); 
         }).catch(function (e){
@@ -77,6 +77,11 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
         }).catch(function(e){
             console.error(e);
         });
+    }
+
+    // Displays the modal with pokemon details
+    function showModal(pokemon) {
+        let modalContainer = document.querySelector('#modal-container')
     }
 
 
