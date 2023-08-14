@@ -52,10 +52,10 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
         return fetch(apiUrl).then(function(response) {
             return response.json();
         }).then (function (json) {
-            json.results.forEach(function(pokemon){
+            json.results.forEach(function(item){
                 let pokemon = {
-                    name: pokemon.name,
-                    detailsUrl: pokemon.url
+                    name: item.name,
+                    detailsUrl: item.url
                 }
                 add(pokemon);
             }); 
