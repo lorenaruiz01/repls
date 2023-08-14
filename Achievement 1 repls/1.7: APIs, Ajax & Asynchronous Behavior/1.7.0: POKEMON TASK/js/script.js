@@ -107,6 +107,7 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
         typesElement.innerText = 'Types: ' + pokemon.types;             // create new paragraph element within modal
 
         modal.appendChild(closeButtonElement);                          // add close button to modal
+        modal.appendChild(titleElement);                                // add pokemon name to modal
         
 
     }
