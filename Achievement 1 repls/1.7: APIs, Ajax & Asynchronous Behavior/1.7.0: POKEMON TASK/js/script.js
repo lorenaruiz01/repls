@@ -85,6 +85,7 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 
         modalContainer.innerHTML =''        // clears existing modal content
         let modal = document.createElement('div');      // creates new div to hold modal
+        modal.classList.add('modal');       // adds class of modal to newly created div
     }
 
 
