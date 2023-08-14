@@ -83,9 +83,9 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     function showModal(pokemon) {
         let modalContainer = document.querySelector('#modal-container');
 
-        modalContainer.innerHTML =''        // clears existing modal content
-        let modal = document.createElement('div');      // creates new div to hold modal
-        modal.classList.add('modal');       // adds class of modal to newly created div
+        modalContainer.innerHTML =''                                    // clears existing modal content
+        let modal = document.createElement('div');                      // creates new div to hold modal
+        modal.classList.add('modal');                                   // adds class of modal to newly created div
 
         let closeButtonElement = document.createElement('butto');       // create a button element
         closeButtonElement.classList.add('modal-close');                // add class of modal-close to newly created button
@@ -102,6 +102,13 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 
         let contentElement = document.createElement('p');               // create a new paragraph element within modal
         contentElement.innerText = 'Height: ' + pokemon.height;         // concatenate height details
+
+        let typesElement = document.createElement('p');
+        typesElement.innerText = 'Types: ' + pokemon.types;             // create new paragraph element within modal
+
+        modal.appendChild(closeButtonElement);                          // add close button to modal
+        
+
     }
 
 
