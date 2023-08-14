@@ -110,7 +110,8 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
         modal.appendChild(titleElement);                                // add pokemon name to modal
         modal.appendChild(imageElement);                                // add pokemon image to modal
         modal.appendChild(contentElement);                              // add pokemon height to mdoal
-        
+        modal.appendChild(typesElement);                                // add pokemon types to modal
+
     }
 
 
