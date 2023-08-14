@@ -94,6 +94,11 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
 
         let titleElement = document.createElement('h1');                // create a title element for modal
         titleElement.innerText = pokemon.name;                          // add pokemon name to modal title
+
+        let imageElement = document.createElement('img');               // creates element to hold image
+        imageElement.classList.add('modal-img');                        // add modal-img class to modal 
+        imageElement.src = pokemon.imageUrl;                            // link pokemon image to modal
+
     }
 
 
