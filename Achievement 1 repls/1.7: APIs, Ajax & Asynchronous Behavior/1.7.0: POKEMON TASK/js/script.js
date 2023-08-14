@@ -99,6 +99,9 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
         imageElement.classList.add('modal-img');                        // add modal-img class to modal 
         imageElement.src = pokemon.imageUrl;                            // link pokemon image to modal
 
+
+        let contentElement = document.createElement('p');               // create a new paragraph element within modal
+        contentElement.innerText = 'Height: ' + pokemon.height;         // concatenate height details
     }
 
 
