@@ -57,10 +57,9 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
                     name: item.name,
                     detailsUrl: item.url
                 }
-            });
                 add(pokemon);
             });
-        }
+        })
     }
   
     return {    // this returns an object with the value of the getAll and the add function
