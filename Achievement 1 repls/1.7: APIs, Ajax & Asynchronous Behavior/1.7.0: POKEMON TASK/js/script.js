@@ -59,6 +59,8 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
                 }
                 add(pokemon);
             });
+        }).catch(function (e){
+            console.error(e);
         })
     }
   
