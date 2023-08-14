@@ -22,7 +22,7 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     
     function addListItem(pokemon) {       // the addListItem function adds a pokemon as a list item and button
       // assign ul element to pokemonList variable
-      let pokemonList = document.querySelector('ul');
+      let pokemonList = document.querySelector('.pokemon-list');
   
       // create an li element
       let listItem = document.createElement('li');
