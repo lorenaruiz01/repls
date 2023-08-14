@@ -47,6 +47,12 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     function showDetails (pokemon) {
         loadDetails(pokemon);
     }
+
+    function loadList() {
+        return fetch(apiUrl).then(function(response) {
+            return response.json();
+        })
+    }
   
     return {    // this returns an object with the value of the getAll and the add function
       getAll: getAll,   // getAll: is the key that calls the function and returns the value of the same name (key : value)
