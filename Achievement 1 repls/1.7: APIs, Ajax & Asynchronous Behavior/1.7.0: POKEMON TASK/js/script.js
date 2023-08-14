@@ -10,11 +10,9 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
         'types' in pokemon       // checks that pokemon object includes types key
     ) {
       pokemonList.push(pokemon);
-      console.log(pokemonList);
-
-    } //else {
-      //console.log('pokemon cannot be pushed to pokemonList');
-   // }  
+    } else {
+      console.log('pokemon cannot be pushed to pokemonList');
+ }  
   }
   
     function getAll () {    // the getAll function returns all items in the pokemonList array
