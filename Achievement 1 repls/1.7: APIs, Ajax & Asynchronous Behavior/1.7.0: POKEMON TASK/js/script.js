@@ -51,7 +51,15 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     function loadList() {
         return fetch(apiUrl).then(function(response) {
             return response.json();
-        })
+        }).then (function json) {
+            json.results.forEach(function(item){
+                let pokemon = {
+                    name: item.name,
+                    detailsUrl: item.url
+                };
+                add(pokemon);
+            });
+        }
     }
   
     return {    // this returns an object with the value of the getAll and the add function
