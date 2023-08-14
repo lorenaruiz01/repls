@@ -90,9 +90,9 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
   }) ();        // the (); makes this a self-executing function
   
   
-  
-  
-  pokemonRepository.getAll().forEach(function (pokemon) {
-    pokemonRepository.addListItem(pokemon);
+ pokemonRepository.loadList().then(function() {
+    pokemonRepository.getAll().forEach(function (pokemon) {
+        pokemonRepository.addListItem(pokemon);
+    }); 
   });
   
