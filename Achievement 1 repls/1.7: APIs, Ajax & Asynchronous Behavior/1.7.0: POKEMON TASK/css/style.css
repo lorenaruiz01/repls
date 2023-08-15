@@ -21,5 +21,7 @@ body {
     background-color: lavender;
     border: 2px solid lavender;
     border-radius: 5px;
+    padding: 40px;
+    margin: 4px 2px;
     
 }
