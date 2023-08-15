@@ -12,34 +12,24 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
       pokemonList.push(pokemon);
     } else {
       console.log('pokemon cannot be pushed to pokemonList');
- }  
-  }
+    }  
+    }
   
     function getAll () {    // the getAll function returns all items in the pokemonList array
       return pokemonList;
     }
   
     
-    function addListItem(pokemon) {       // the addListItem function adds a pokemon as a list item and button
-      // assign ul element to pokemonList variable
-      let pokemonList = document.querySelector('.pokemon-list');
-  
-      // create an li element
-      let listItem = document.createElement('li');
+    function addListItem(pokemon) {                                     // the addListItem function adds a pokemon as a list item and button
+      let pokemonList = document.querySelector('.pokemon-list');        // assign ul element to pokemonList variable
       
-      // create a button element
-      let button = document.createElement('button');
-      button.innerText = pokemon.name;
-      button.classList.add('button-class');
-      
-      // add button to listItem
-      listItem.appendChild(button);
-  
-      // add listItem to pokemonList
-      pokemonList.appendChild(listItem);
-    
-      // show pokemon details when user clicks on pokemon button
-      button.addEventListener('click', () => {
+      let listItem = document.createElement('li');                      // create an li element
+      let button = document.createElement('button');                    // create a button element for each pokemon
+      button.innerText = pokemon.name;                                  // add the pokemon's name to the button
+      button.classList.add('button-class');                             // add button-class to button
+      listItem.appendChild(button);                                     // add button to listItem
+      pokemonList.appendChild(listItem);                                // add listItem pokemon button to pokemonList
+      button.addEventListener('click', () => {                          // show pokemon details when user clicks on pokemon button
         showDetails(pokemon);
       }
     )};
