@@ -1,13 +1,13 @@
-let pokemonRepository = (function () {    // wrapping pokemonList array inside of an IIFE (Immediately Invoked Function Expression)
-    let pokemonList = [];                     // an empty array of pokemon objects
+let pokemonRepository = (function () {                                  // wrapping pokemonList array inside of an IIFE (Immediately Invoked Function Expression)
+    let pokemonList = [];                                               // an empty array of pokemon objects
 
     let apiUrl = 'https://pokeapi.co/api/v2/pokemon';
   
-    function add (pokemon) {    // the add function adds the selected pokemon to the array
-      if (typeof pokemon === 'object' &&    // checks whether pokemon is an object
-        'name' in pokemon &&                // checks that pokemon object includes name key 
-        'height' in pokemon &&    // checks that pokemon object includes height key
-        'types' in pokemon       // checks that pokemon object includes types key
+    function add (pokemon) {                                            // the add function adds the selected pokemon to the array
+      if (typeof pokemon === 'object' &&                                // checks whether pokemon is an object
+        'name' in pokemon &&                                            // checks that pokemon object includes name key 
+        'height' in pokemon &&                                          // checks that pokemon object includes height key
+        'types' in pokemon                                              // checks that pokemon object includes types key
     ) {
       pokemonList.push(pokemon);
     } else {
