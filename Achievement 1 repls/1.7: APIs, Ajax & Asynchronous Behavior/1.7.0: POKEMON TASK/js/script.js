@@ -132,7 +132,7 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
       addListItem: addListItem, 
       showDetails: showDetails
     }
-  }) ();        // the (); makes this a self-executing function
+  }) ();                                                                // the (); makes this a self-executing function
   
   
  pokemonRepository.loadList().then(function() {
