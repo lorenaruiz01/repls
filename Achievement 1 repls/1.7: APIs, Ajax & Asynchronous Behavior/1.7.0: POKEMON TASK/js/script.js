@@ -112,6 +112,7 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
         modal.appendChild(contentElement);                              // add pokemon height to mdoal
         modal.appendChild(typesElement);                                // add pokemon types to modal
         modalContainer.appendChild(modal);
+        modalContainer.classList.add('is-visible');
     }
 
 
