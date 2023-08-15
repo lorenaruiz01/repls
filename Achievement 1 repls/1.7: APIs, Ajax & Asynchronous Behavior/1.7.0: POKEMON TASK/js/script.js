@@ -124,9 +124,9 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     }
 
 
-    return {    // this returns an object with the value of the getAll and the add function
-      getAll: getAll,   // getAll: is the key that calls the function and returns the value of the same name (key : value)
-      add:add,       // add: is the key that calls the function and returns the value of the same name (key : value)
+    return {                                                            // this returns an object with the value of the getAll and the add function
+      getAll: getAll,                                                   // getAll: is the key that calls the function and returns the value of the same name (key : value)
+      add:add,                                                          // add: is the key that calls the function and returns the value of the same name (key : value)
       loadList: loadList,
       loadDetails: loadDetails,
       addListItem: addListItem, 
