@@ -26,5 +26,7 @@ body {
     color: black;
     text-align: center;
     text-decoration: none;
+    display: grid;
+    align-items: center;
     
 }
