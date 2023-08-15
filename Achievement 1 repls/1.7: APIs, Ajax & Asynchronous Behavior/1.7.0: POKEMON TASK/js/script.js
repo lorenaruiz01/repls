@@ -112,7 +112,15 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
         modal.appendChild(contentElement);                              // add pokemon height to mdoal
         modal.appendChild(typesElement);                                // add pokemon types to modal
         modalContainer.appendChild(modal);
+        
         modalContainer.classList.add('is-visible');
+        modalContainer.addEventListener('click', (e) => {               // since this is also triggered when clicking inside the modal, 
+            let target = e.target;                                      
+            if (target === modalContainer) {                            // only close it if the user clicks directly on the overlay
+                hideModal();
+            };
+        })
+
     }
 
 
