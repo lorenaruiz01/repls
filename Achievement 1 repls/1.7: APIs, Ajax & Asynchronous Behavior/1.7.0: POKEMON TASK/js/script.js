@@ -129,7 +129,8 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
       add:add,       // add: is the key that calls the function and returns the value of the same name (key : value)
       loadList: loadList,
       loadDetails: loadDetails,
-      addListItem: addListItem
+      addListItem: addListItem, 
+      showDetails: showDetails
     }
   }) ();        // the (); makes this a self-executing function
   
@@ -140,3 +141,5 @@ let pokemonRepository = (function () {    // wrapping pokemonList array inside o
     }); 
   });
   
+  
+//   add modal to 
