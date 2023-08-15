@@ -15,7 +15,7 @@ let pokemonRepository = (function () {                                  // wrapp
     }  
     }
   
-    function getAll () {    // the getAll function returns all items in the pokemonList array
+    function getAll () {                                                // the getAll function returns all items in the pokemonList array
       return pokemonList;
     }
   
