@@ -23,5 +23,8 @@ body {
     border-radius: 5px;
     padding: 40px;
     margin: 4px 2px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
     
 }
