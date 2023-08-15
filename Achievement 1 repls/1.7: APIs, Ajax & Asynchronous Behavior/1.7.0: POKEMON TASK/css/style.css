@@ -17,3 +17,9 @@ body {
     font-size: 16px;
 }
 
+.button-class {
+    background-color: lavender;
+    border: 2px solid lavender;
+    border-radius: 5px;
+    
+}
