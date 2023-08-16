@@ -80,7 +80,7 @@ let pokemonRepository = (function () {                                  // wrapp
 
         let closeButtonElement = document.createElement('button');      // create a button element
         closeButtonElement.classList.add('modal-close');                // add class of modal-close to newly created button
-        closebuttonElememt.innerText = 'X';                             // set inner text of button to 'X'
+        closeButtonElement.innerText = 'X';                             // set inner text of button to 'X'
         closeButtonElement.addEventListener('click', hideModal);        // hide modal when user clicks button    
 
         let titleElement = document.createElement('h1');                // create a title element for modal
