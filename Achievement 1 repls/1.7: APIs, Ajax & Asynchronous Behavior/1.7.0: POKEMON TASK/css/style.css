@@ -36,3 +36,9 @@ body {
     animation: bounce 0.5s linear;
     cursor: pointer;
 }
+
+@keyframes bounce {
+    40%{
+        transform: translateY(-6px); 
+    }    
+}
