@@ -5,7 +5,7 @@ body {
     font-size: 16px;
   }
 
-.pokemon-list {
+.pokemon-list-item {
     border: none;
     border-radius: none;
     background-color: rgb(86, 80, 125);
