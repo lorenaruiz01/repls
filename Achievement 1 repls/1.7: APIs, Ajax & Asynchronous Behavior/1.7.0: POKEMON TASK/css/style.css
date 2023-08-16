@@ -17,7 +17,7 @@ body {
     font-size: 16px;
 }
 
-.button-class {
+.pokemon-list-item {
     background-color: lavender;
     border: 2px solid lavender;
     border-radius: 5px;
@@ -32,7 +32,7 @@ body {
     transition-duration: .5s;
 }
 
-.button-class:hover {
+.pokemon-list-item:hover {
     animation: bounce 0.5s linear;
     cursor: pointer;
 }
