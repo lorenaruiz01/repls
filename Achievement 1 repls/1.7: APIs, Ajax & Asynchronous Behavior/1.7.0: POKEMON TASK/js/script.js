@@ -27,7 +27,7 @@ let pokemonRepository = (function () {                                  // wrapp
       let listItem = document.createElement('li');                      // create an li element
       let button = document.createElement('button');                    // create a button element for each pokemon
       button.innerText = pokemon.name;                                  // add the pokemon's name to the button
-      button.classList.add('button-class');                             // add button-class to button
+      button.classList.add('pokemon-list-item');                        // add 'pokemon-list-item' class to button
       listItem.appendChild(button);                                     // add button to listItem
       pokemonList.appendChild(listItem);                                // add listItem pokemon button to pokemonList
       button.addEventListener('click', () => {                          // show pokemon details when user clicks on pokemon button
