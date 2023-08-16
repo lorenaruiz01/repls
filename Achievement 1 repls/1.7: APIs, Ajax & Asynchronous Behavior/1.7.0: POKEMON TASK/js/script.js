@@ -114,6 +114,11 @@ let pokemonRepository = (function () {                                  // wrapp
 
     }
 
+    function hideModal() {
+        let modalContainer = document.querySelector('#modal-container');
+        modalContainer.classList.remove('is-visible');
+    }
+
 
     return {                                                            // this returns an object with the value of the getAll and the add function
       getAll: getAll,                                                   // getAll: is the key that calls the function and returns the value of the same name (key : value)
