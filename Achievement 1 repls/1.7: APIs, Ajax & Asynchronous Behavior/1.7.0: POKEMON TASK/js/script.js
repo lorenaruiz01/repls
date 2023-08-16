@@ -83,7 +83,7 @@ let pokemonRepository = (function () {                                  // wrapp
         closeButtonElement.innerText = 'X';                             // set inner text of button to 'X'
         closeButtonElement.addEventListener('click', hideModal);        // hide modal when user clicks button    
 
-        let titleElement = document.createElement('h1');                // create a title element for modal
+        let titleElement = document.createElement('h2');                // create a title element for modal
         titleElement.innerText = pokemon.name;                          // add pokemon name to modal title
 
         let imageElement = document.createElement('img');               // creates element to hold image
