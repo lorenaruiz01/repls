@@ -9,38 +9,31 @@ body {
     font-size: 16px;
   }
 
-.pokemon-list {
-    border: none;
-    border-radius: none;
-    background-color: rgb(86, 80, 125);
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    list-style-type: none;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-}
 
-.pokemon-list-item {
+/* li = .card in pokedex app  */
+li {
     background-color: lavender;
-    border: 2px solid lavender;
+    border: none;
     border-radius: 5px;
     padding: 40px;
     margin: 4px 2px;
+    color: black;
     text-transform: capitalize;
     font-size: 32px;
-    color: black;
-    text-align: center;
     text-decoration: none;
+    text-align: center;
     display: grid;
     align-items: center;
-    -webkit-transition-duration: .5s;
-    transition-duration: .5s;
+    list-style-type: none;
 }
 
-.pokemon-list-item:hover {
+li:hover {
     animation: bounce 0.5s linear;
     cursor: pointer;
+}
+
+.pokemon-list-item{
+    border: none;
 }
 
 @keyframes bounce {
