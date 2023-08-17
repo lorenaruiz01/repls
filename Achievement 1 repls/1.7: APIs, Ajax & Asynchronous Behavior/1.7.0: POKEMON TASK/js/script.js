@@ -26,10 +26,10 @@ let pokemonRepository = (function () {                                  // wrapp
       
       let listItem = document.createElement('li');                      // create an li element
       let button = document.createElement('button');                    // create a button element for each pokemon
-      button.innerHTML =`<li ${pokemon.name}> 
+      button.innerHTML =` 
                             <img src=${pokemon.image}>                                  
                             <h2>#${pokemon.id} ${pokemon.name}</h2>
-                        </li>`                                          // add the pokemon's name, number, and image to the button
+                        `                                          // add the pokemon's name, number, and image to the button
       button.classList.add('pokemon-list-item');                        // add 'pokemon-list-item' class to button
       listItem.appendChild(button);                                     // add button to listItem
       pokemonList.appendChild(listItem);                                // add listItem pokemon button to pokemonList
