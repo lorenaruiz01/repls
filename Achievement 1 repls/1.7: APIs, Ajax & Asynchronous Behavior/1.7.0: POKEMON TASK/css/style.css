@@ -85,5 +85,7 @@ ul {    /* ul = #pokedex in pokedex app */
     width: 100vw;
     background: lavender;
     opacity: .95;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
