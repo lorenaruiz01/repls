@@ -32,17 +32,13 @@ li {
     list-style-type: none;
 }
 
-/* li:hover {
-    animation: bounce 0.5s linear;
-    cursor: pointer;
-} */
-
-.pokemon-list-item{
+button {
     background-color: lavender;
     border: none;
+    border-radius: 5px;
 }
 
-.pokemon-list-item:hover {
+button:hover {
     animation: bounce 0.5s linear;
     cursor: pointer;
 }
