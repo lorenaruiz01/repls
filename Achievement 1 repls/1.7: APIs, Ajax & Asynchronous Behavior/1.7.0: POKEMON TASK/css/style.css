@@ -59,6 +59,11 @@ p {
     margin-bottom: 5px; 
 }
 
+img {
+    height: 180px;
+    margin: 0 auto;
+}
+
 /* ul = #pokedex in pokedex app */
 ul { 
     padding-inline-start: 0;
