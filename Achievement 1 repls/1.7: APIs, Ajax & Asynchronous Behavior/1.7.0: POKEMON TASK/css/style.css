@@ -83,7 +83,7 @@ ul {    /* ul = #pokedex in pokedex app */
 
 
 /* .modal = .popup */
-#modal-container {   
+.modal {   
     position: fixed;
     top: 0;
     left: 0;
@@ -96,7 +96,7 @@ ul {    /* ul = #pokedex in pokedex app */
     align-items: center;
 }
 
-.modal {
+/* .modal {
     background-color: lavender;
     border-radius: 5px;
     padding: 40px;
@@ -106,4 +106,4 @@ ul {    /* ul = #pokedex in pokedex app */
     text-decoration: none;
     display: grid;
     align-items: center;
-}
+} */
