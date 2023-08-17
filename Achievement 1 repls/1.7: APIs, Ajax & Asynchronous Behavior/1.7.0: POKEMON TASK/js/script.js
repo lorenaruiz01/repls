@@ -29,7 +29,7 @@ let pokemonRepository = (function () {                                  // wrapp
       button.innerHTML =` 
                             <img src=${pokemon.image}>                                  
                             <h2>#${pokemon.id} ${pokemon.name}</h2>
-                        `                                          // add the pokemon's name, number, and image to the button
+                        `                                               // add the pokemon's image, number, and name to the button
       button.classList.add('pokemon-list-item');                        // add 'pokemon-list-item' class to button
       listItem.appendChild(button);                                     // add button to listItem
       pokemonList.appendChild(listItem);                                // add listItem pokemon button to pokemonList
