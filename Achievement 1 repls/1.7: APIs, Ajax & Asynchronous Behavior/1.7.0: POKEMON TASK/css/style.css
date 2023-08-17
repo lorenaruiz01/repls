@@ -52,7 +52,10 @@ h2 {
     margin-bottom: 0;
 }
 
-
+p {
+    font-weight: lighter;
+   
+}
 
 /* ul = #pokedex in pokedex app */
 ul { 
