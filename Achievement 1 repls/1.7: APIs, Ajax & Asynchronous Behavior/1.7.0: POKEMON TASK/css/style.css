@@ -81,9 +81,8 @@ ul {    /* ul = #pokedex in pokedex app */
     margin: 0 auto;
 }
 
-
 /* .modal = .popup */
-.modal {   
+#modal-container {   
     position: fixed;
     top: 0;
     left: 0;
