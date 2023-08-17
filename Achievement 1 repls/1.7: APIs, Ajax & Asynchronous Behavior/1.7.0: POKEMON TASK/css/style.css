@@ -89,7 +89,7 @@ ul {    /* ul = #pokedex in pokedex app */
     left: 0;
     height: 100vh;
     width: 100vw;
-    background: lavender;
+    background: rgba(117, 117, 117, 0.94);
     opacity: .95;
     display: flex;
     justify-content: center;
