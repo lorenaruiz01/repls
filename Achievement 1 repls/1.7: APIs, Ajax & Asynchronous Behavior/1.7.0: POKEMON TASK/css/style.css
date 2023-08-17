@@ -16,7 +16,7 @@ body {
 }
 
 /* li = .card in pokedex app  */
-li {
+.pokemon-list-item {
     background-color: lavender;
     border: none;
     border-radius: 5px;
@@ -68,7 +68,7 @@ h2 {
 
 p {
     font-weight: lighter;
-    color: rgb(117, 117, 117);
+    color: black;
     margin-top: 5px;
     margin-bottom: 5px; 
 }
@@ -117,3 +117,4 @@ ul {    /* ul = #pokedex in pokedex app */
     display: grid;
     align-items: center;
 } */
+
