@@ -27,13 +27,19 @@ li {
     list-style-type: none;
 }
 
-li:hover {
+/* li:hover {
     animation: bounce 0.5s linear;
     cursor: pointer;
-}
+} */
 
 .pokemon-list-item{
+    background-color: lavender;
     border: none;
+}
+
+.pokemon-list-item:hover {
+    animation: bounce 0.5s linear;
+    cursor: pointer;
 }
 
 @keyframes bounce {
