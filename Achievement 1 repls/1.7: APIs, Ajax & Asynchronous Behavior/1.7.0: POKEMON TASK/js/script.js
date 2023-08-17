@@ -81,8 +81,8 @@ let pokemonRepository = (function () {                                  // wrapp
     // Displays the modal with pokemon details
     function showModal(pokemon) {
         let modalContainer = document.querySelector('#modal-container');
-
         modalContainer.innerHTML =''                                    // clears existing modal content
+        
         let modal = document.createElement('div');                      // creates new div to hold modal
         modal.classList.add('modal');                                   // adds class of modal to newly created div
 
