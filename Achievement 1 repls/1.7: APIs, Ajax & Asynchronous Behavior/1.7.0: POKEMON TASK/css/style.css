@@ -55,7 +55,8 @@ h2 {
 p {
     font-weight: lighter;
     color: rgb(117, 117, 117);
-    
+    margin-top: 5px;
+    margin-bottom: 5px; 
 }
 
 /* ul = #pokedex in pokedex app */
