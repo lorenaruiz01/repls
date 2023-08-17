@@ -110,7 +110,7 @@ let pokemonRepository = (function () {                                  // wrapp
         let typesElement = document.createElement('p');
         typesElement.innerText = 'Types: ' + pokemon.types;             // create new paragraph element within modal
 
-        modal.appendChild(closeButtonElement);                          // add close button to modal
+        modalContainer.appendChild(closeButtonElement);                          // add close button to modal
         modal.appendChild(titleElement);                                // add pokemon name to modal
         modal.appendChild(imageElement);                                // add pokemon image to modal
         modal.appendChild(imageElementBack);
