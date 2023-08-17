@@ -64,10 +64,16 @@ img {
     margin: 0 auto;
 }
 
-/* ul = #pokedex in pokedex app */
-ul { 
+
+ul {    /* ul = #pokedex in pokedex app */
     padding-inline-start: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
 }
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
