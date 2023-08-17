@@ -69,6 +69,7 @@ let pokemonRepository = (function () {                                  // wrapp
         }).then(function(details) {
             //pokemon details
             pokemon.imageUrl = details.sprites.front_default;
+            pokemon.imageUrlBack = details.sprites.back_default;
             pokemon.height = details.height;
             pokemon.types = details.types;
             showModal(pokemon);
@@ -97,6 +98,9 @@ let pokemonRepository = (function () {                                  // wrapp
         imageElement.classList.add('modal-img');                        // add modal-img class to modal 
         imageElement.src = pokemon.imageUrl;                            // link pokemon image to modal
 
+        let imageElementBack = document.createElement('img');
+        imageElementBack.classList.add('modal-img');
+        imageElementBack.src = pokemon.imageUrlBack;
 
         let contentElement = document.createElement('p');               // create a new paragraph element within modal
         contentElement.innerText = 'Height: ' + pokemon.height;         // concatenate height details
@@ -107,6 +111,7 @@ let pokemonRepository = (function () {                                  // wrapp
         modal.appendChild(closeButtonElement);                          // add close button to modal
         modal.appendChild(titleElement);                                // add pokemon name to modal
         modal.appendChild(imageElement);                                // add pokemon image to modal
+        modal.appendChild(imageElementBack);
         modal.appendChild(contentElement);                              // add pokemon height to mdoal
         modal.appendChild(typesElement);                                // add pokemon types to modal
         modalContainer.appendChild(modal);
