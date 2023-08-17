@@ -27,6 +27,7 @@ let pokemonRepository = (function () {                                  // wrapp
       let listItem = document.createElement('li');                      // create an li element
       let button = document.createElement('button');                    // create a button element for each pokemon
       button.innerText = pokemon.name;                                  // add the pokemon's name to the button
+      button.innerHTML = `<img src=${pokemon.image}>`;                  // add pokemon image to button
       button.classList.add('pokemon-list-item');                        // add 'pokemon-list-item' class to button
       listItem.appendChild(button);                                     // add button to listItem
       pokemonList.appendChild(listItem);                                // add listItem pokemon button to pokemonList
@@ -43,9 +44,11 @@ let pokemonRepository = (function () {                                  // wrapp
         return fetch(apiUrl).then(function(response) {
             return response.json();
         }).then (function (json) {
-            json.results.forEach(function(item){
+            json.results.forEach(function(item, index){
                 let pokemon = {
                     name: item.name,
+                    id: index + 1,
+                    image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index+ 1}.png`,
                     detailsUrl: item.url
                 };
                 add(pokemon);
