@@ -52,7 +52,7 @@ let pokemonRepository = (function () {                                  // wrapp
                 let pokemon = {
                     name: item.name,
                     id: index + 1,
-                    image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index+ 1}.png`,
+                    image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index +1}.png`,
                     detailsUrl: item.url
                 };
                 add(pokemon);
@@ -91,7 +91,7 @@ let pokemonRepository = (function () {                                  // wrapp
         closeButtonElement.addEventListener('click', hideModal);        // hide modal when user clicks button    
 
         let titleElement = document.createElement('h2');                // create a title element for modal
-        titleElement.innerText = pokemon.name;                          // add pokemon name to modal title
+        titleElement.innerText = `#${pokemon.id} ${pokemon.name}`;                          // add pokemon name to modal title
 
         let imageElement = document.createElement('img');               // creates element to hold image
         imageElement.classList.add('modal-img');                        // add modal-img class to modal 
