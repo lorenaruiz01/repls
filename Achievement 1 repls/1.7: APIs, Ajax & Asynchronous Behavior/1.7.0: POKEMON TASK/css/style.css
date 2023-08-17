@@ -77,7 +77,9 @@ ul {    /* ul = #pokedex in pokedex app */
     margin: 0 auto;
 }
 
-.modal-container {
+
+/* .modal = .popup */
+.modal {   
     position: fixed;
     top: 0;
     left: 0;
@@ -89,3 +91,5 @@ ul {    /* ul = #pokedex in pokedex app */
     justify-content: center;
     align-items: center;
 }
+
+
