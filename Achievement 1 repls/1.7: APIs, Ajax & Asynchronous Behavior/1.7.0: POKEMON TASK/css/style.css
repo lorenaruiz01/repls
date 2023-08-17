@@ -9,6 +9,11 @@ body {
     font-size: 16px;
   }
 
+.heading {
+    display: grid;
+    text-align: center;
+    align-content: center;
+}
 
 /* li = .card in pokedex app  */
 li {
