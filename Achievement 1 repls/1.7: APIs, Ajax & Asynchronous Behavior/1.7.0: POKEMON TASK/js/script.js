@@ -25,12 +25,11 @@ let pokemonRepository = (function () {                                  // wrapp
       let pokemonList = document.querySelector('.pokemon-list');        // assign ul element to pokemonList variable
       
       let listItem = document.createElement('li');                      // create an li element
-      listItem.classList.add('pokemon-list-item');                        // add 'pokemon-list-item' class to button
+      listItem.classList.add('pokemon-list-item');                      // add 'pokemon-list-item' class to button
       listItem.innerHTML =  ` 
                                 <img src=${pokemon.image}>                                  
                                 <h2>#${pokemon.id} ${pokemon.name}</h2>
                             `                                               // add the pokemon's image, number, and name to the button
-      //button.appendChild(listItem);                                     // add button to listItem
       pokemonList.appendChild(listItem);                                // add listItem pokemon button to pokemonList
       listItem.addEventListener('click', () => {                          // show pokemon details when user clicks on pokemon button
         showDetails(pokemon);
