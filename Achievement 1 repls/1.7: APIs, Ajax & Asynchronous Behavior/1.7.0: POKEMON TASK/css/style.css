@@ -41,7 +41,11 @@ body {
     background-color: lavender;
     border: none;
     border-radius: 5px;
+    padding: 40px;
+    margin: 4px 2px;
+    color: black;
     
+
 }
 
 /* @keyframes bounce {
@@ -65,6 +69,7 @@ h2 {
     font-weight: normal;
     margin-bottom: 0;
     color: black;
+    text-align: center;
 }
 
 p {
