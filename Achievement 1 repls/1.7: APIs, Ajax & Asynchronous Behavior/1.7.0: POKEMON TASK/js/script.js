@@ -24,8 +24,6 @@ let pokemonRepository = (function () {                                  // wrapp
     function addListItem(pokemon) {                                     // the addListItem function adds a pokemon as a list item and button
       let pokemonList = document.querySelector('.pokemon-list');        // assign ul element to pokemonList variable
       
-      // let button = document.createElement('button');                    // create a button element for each pokemon
-      // button.classList.add('pokemon-list-item')
       let listItem = document.createElement('li');                      // create an li element
       listItem.classList.add('pokemon-list-item');                        // add 'pokemon-list-item' class to button
       listItem.innerHTML =  ` 
