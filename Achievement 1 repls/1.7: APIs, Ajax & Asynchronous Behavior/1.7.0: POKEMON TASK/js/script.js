@@ -108,11 +108,11 @@ let pokemonRepository = (function () {                                  // wrapp
         imageElementBack.classList.add('modal-img');
         imageElementBack.src = pokemon.imageUrlBack;
 
-        let contentElement = document.createElement('p');               // create a new paragraph element within modal
-        contentElement.innerText = 'Height: ' + pokemon.height;         // concatenate height details
+        let contentElement = document.createElement('p');                     // create a new paragraph element within modal
+        contentElement.innerText = 'Height: ' + pokemon.height + 'm';         // concatenate height details
 
         let typesElement = document.createElement('p');
-        typesElement.innerText = 'Types: ' + pokemon.types;             // create new paragraph element within modal
+        typesElement.innerText = 'Types: ' + pokemon.types;                   // create new paragraph element within modal
 
         pokemonCard.appendChild(closeButtonElement);                          // add close button to modal
         pokemonCard.appendChild(titleElement);                                // add pokemon name to modal
@@ -124,7 +124,7 @@ let pokemonRepository = (function () {                                  // wrapp
         modalContainer.appendChild(modal);
         
         modalContainer.classList.add('is-visible');
-        modalContainer.addEventListener('click', (e) => {               // since this is also triggered when clicking inside the modal, 
+        modal.addEventListener('click', (e) => {               // since this is also triggered when clicking inside the modal, 
             let target = e.target;                                      
             if (target === modalContainer) {                            // only close it if the user clicks directly on the overlay
                 hideModal();
