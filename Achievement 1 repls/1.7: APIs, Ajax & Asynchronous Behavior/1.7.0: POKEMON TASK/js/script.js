@@ -29,9 +29,9 @@ let pokemonRepository = (function () {                                  // wrapp
       listItem.innerHTML =  ` 
                                 <img src=${pokemon.image}>                                  
                                 <h2>#${pokemon.id} ${pokemon.name}</h2>
-                            `                                               // add the pokemon's image, number, and name to the button
+                            `                                           // add the pokemon's image, number, and name to the button
       pokemonList.appendChild(listItem);                                // add listItem pokemon button to pokemonList
-      listItem.addEventListener('click', () => {                          // show pokemon details when user clicks on pokemon button
+      listItem.addEventListener('click', () => {                        // show pokemon details when user clicks on pokemon button
         showDetails(pokemon);
       }
     )};
@@ -105,23 +105,23 @@ let pokemonRepository = (function () {                                  // wrapp
         imageElementBack.classList.add('modal-img');
         imageElementBack.src = pokemon.imageUrlBack;
 
-        let contentElement = document.createElement('p');                     // create a new paragraph element within modal
-        contentElement.innerText = 'Height: ' + pokemon.height + 'm';         // concatenate height details
+        let contentElement = document.createElement('p');               // create a new paragraph element within modal
+        contentElement.innerText = 'Height: ' + pokemon.height + 'm';   // concatenate height details
 
         let typesElement = document.createElement('p');
-        typesElement.innerText = 'Types: ' + pokemon.types;                   // create new paragraph element within modal
+        typesElement.innerText = 'Types: ' + pokemon.types;             // create new paragraph element within modal
 
-        pokemonCard.appendChild(closeButtonElement);                          // add close button to modal
-        pokemonCard.appendChild(titleElement);                                // add pokemon name to modal
-        pokemonCard.appendChild(imageElement);                                // add pokemon image to modal
-        pokemonCard.appendChild(imageElementBack);
-        pokemonCard.appendChild(contentElement);                              // add pokemon height to mdoal
-        pokemonCard.appendChild(typesElement);                                // add pokemon types to modal
-        modal.appendChild(pokemonCard);
-        modalContainer.appendChild(modal);
+        pokemonCard.appendChild(closeButtonElement);                    // add close button to modal
+        pokemonCard.appendChild(titleElement);                          // add pokemon name to modal
+        pokemonCard.appendChild(imageElement);                          // add pokemon image to modal
+        pokemonCard.appendChild(imageElementBack);                      // add pokemon second image to modal
+        pokemonCard.appendChild(contentElement);                        // add pokemon height to modal
+        pokemonCard.appendChild(typesElement);                          // add pokemon types to modal
+        modal.appendChild(pokemonCard);                                 // add pokemon card to modal
+        modalContainer.appendChild(modal);                              // add modal to modal container
         
         modalContainer.classList.add('is-visible');
-        modal.addEventListener('click', (e) => {               // since this is also triggered when clicking inside the modal, 
+        modal.addEventListener('click', (e) => {                        // since this is also triggered when clicking inside the modal, 
             let target = e.target;                                      
             if (target === modalContainer) {                            // only close it if the user clicks directly on the overlay
                 hideModal();
@@ -154,6 +154,3 @@ let pokemonRepository = (function () {                                  // wrapp
         pokemonRepository.addListItem(pokemon);
     }); 
   });
-  
-  
-//   add modal to 
