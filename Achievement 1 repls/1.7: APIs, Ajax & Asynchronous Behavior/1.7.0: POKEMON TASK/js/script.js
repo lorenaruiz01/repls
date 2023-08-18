@@ -88,13 +88,14 @@ let pokemonRepository = (function () {                                  // wrapp
         let modal = document.createElement('div');                      // creates new div to hold modal with pokemon info
         modal.classList.add('modal');                                   // adds class of pokemon-list-item to newly created div
 
+        let pokemonCard = document.createElement('div');
+        pokemonCard.classList.add('pokemon-card');
+
         let closeButtonElement = document.createElement('button');      // create a button element
         closeButtonElement.classList.add('modal-close');                // add class of modal-close to newly created button
         closeButtonElement.innerText = 'X';                             // set inner text of button to 'X'
         closeButtonElement.addEventListener('click', hideModal);        // hide modal when user clicks button    
 
-        let pokemonCard = document.createElement('div');
-        pokemonCard.classList.add('pokemon-list-item');
         
         let titleElement = document.createElement('h2');                // create a title element for modal
         titleElement.innerText = `#${pokemon.id} ${pokemon.name}`;      // add pokemon name to modal title
@@ -113,12 +114,13 @@ let pokemonRepository = (function () {                                  // wrapp
         let typesElement = document.createElement('p');
         typesElement.innerText = 'Types: ' + pokemon.types;             // create new paragraph element within modal
 
-        modal.appendChild(closeButtonElement);                          // add close button to modal
-        modal.appendChild(titleElement);                                // add pokemon name to modal
-        modal.appendChild(imageElement);                                // add pokemon image to modal
-        modal.appendChild(imageElementBack);
-        modal.appendChild(contentElement);                              // add pokemon height to mdoal
-        modal.appendChild(typesElement);                                // add pokemon types to modal
+        pokemonCard.appendChild(closeButtonElement);                          // add close button to modal
+        pokemonCard.appendChild(titleElement);                                // add pokemon name to modal
+        pokemonCard.appendChild(imageElement);                                // add pokemon image to modal
+        pokemonCard.appendChild(imageElementBack);
+        pokemonCard.appendChild(contentElement);                              // add pokemon height to mdoal
+        pokemonCard.appendChild(typesElement);                                // add pokemon types to modal
+        modal.appendChild(pokemonCard);
         modalContainer.appendChild(modal);
         
         modalContainer.classList.add('is-visible');
