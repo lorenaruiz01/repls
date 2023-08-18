@@ -145,7 +145,9 @@ let pokemonRepository = (function () {                                  // wrapp
       loadList: loadList,
       loadDetails: loadDetails,
       addListItem: addListItem, 
-      showDetails: showDetails
+      showDetails: showDetails,
+      showModal: showModal,
+      hideModal: hideModal
     }
   }) ();                                                                // the (); makes this a self-executing function
   
