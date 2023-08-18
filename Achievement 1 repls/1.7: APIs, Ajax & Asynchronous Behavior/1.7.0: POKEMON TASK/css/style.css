@@ -44,7 +44,6 @@ body {
     height: 100vh;
     width: 100vw;
     background: rgba(117, 117, 117, 0.94);
-    /* opacity: .95; */
     display: flex;
     justify-content: center;
     align-items: center;
