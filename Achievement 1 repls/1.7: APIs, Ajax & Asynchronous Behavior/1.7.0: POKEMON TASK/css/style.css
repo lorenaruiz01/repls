@@ -37,6 +37,13 @@ body {
     cursor: pointer;
 }
 
+.pokemon-card {
+    background-color: lavender;
+    border: none;
+    border-radius: 5px;
+    
+}
+
 /* @keyframes bounce {
     40%{
         transform: translateY(-6px); 
