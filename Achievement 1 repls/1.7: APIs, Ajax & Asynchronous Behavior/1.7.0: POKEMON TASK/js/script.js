@@ -90,7 +90,7 @@ let pokemonRepository = (function () {                                  // wrapp
 
         let closeButtonElement = document.createElement('button');      // create a button element
         closeButtonElement.classList.add('modal-close');                // add class of modal-close to newly created button
-        closeButtonElement.innerText = 'Close';                             // set inner text of button to 'X'
+        closeButtonElement.innerText = 'Close';                         // set inner text of button to 'Close'
         closeButtonElement.addEventListener('click', hideModal);        // hide modal when user clicks button    
 
         
@@ -123,7 +123,7 @@ let pokemonRepository = (function () {                                  // wrapp
         modalContainer.classList.add('is-visible');
         modal.addEventListener('click', (e) => {                        // since this is also triggered when clicking inside the modal, 
             let target = e.target;                                      
-            if (target === modalContainer) {                            // only close it if the user clicks directly on the overlay
+            if (target === modal) {                            // only close it if the user clicks directly on the overlay
                 hideModal();
             };
         })
@@ -132,7 +132,8 @@ let pokemonRepository = (function () {                                  // wrapp
 
     function hideModal() {
         let modalContainer = document.querySelector('#modal-container');
-        modalContainer.classList.remove('is-visible');                  // 
+        modalContainer.classList.remove('is-visible'); 
+
     }
 
 
