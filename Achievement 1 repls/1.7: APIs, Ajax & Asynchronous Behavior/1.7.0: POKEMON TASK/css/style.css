@@ -55,7 +55,6 @@ body {
     padding: 40px;
     margin: 4px 2px;
     align-items: center;
-    display: grid;
 }
 
 /* @keyframes bounce {
@@ -108,10 +107,9 @@ ul {    /* ul = #pokedex in pokedex app */
 }
 
 button{
-    display: flex;
-    justify-self: end;
-    top: 5px;
-    right: 5px;
+    display: grid;
+    /* top: 5px;
+    right: 5px; */
     background-color: lavender;
     padding: 5px 5px;
     border: none;
