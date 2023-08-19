@@ -69,7 +69,7 @@ let pokemonRepository = (function () {                                  // wrapp
             pokemon.imageUrl = details.sprites.front_default;
             pokemon.imageUrlBack = details.sprites.back_default;
             pokemon.height = details.height;
-            pokemon.types = details.types;
+            pokemon.types = details.types.map( (type) => type.type.name).join(', ');
             showModal(pokemon);
         }).catch(function(e){
             console.error(e);
