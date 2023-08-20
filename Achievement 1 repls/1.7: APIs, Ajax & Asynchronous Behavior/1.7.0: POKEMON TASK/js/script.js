@@ -34,45 +34,26 @@ let pokemonRepository = (function () {                                  // wrapp
                             `                                           // add the pokemon's image, number, and name to the button
       pokemonList.appendChild(listItem);                                // add listItem pokemon button to pokemonList
       listItem.addEventListener('click', () => {                        // show pokemon details when user clicks on pokemon button
-        if (!pokeCache[pokemon.id]) {
-            loadDetailsAndCache(pokemon); // Fetch details and cache if not in cache
-          } else {
-            showDetails(pokeCache[pokemon.id]); // Use cached data
-          }
-        });
-      }
+        // if(!pokeCache[pokemon.id]){
+        //     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+        //     const response = fetch(url);
+        //     const pokemon = response.json();
+        //     pokeCache[pokemon.id] = pokemon;
+        //     loadDetails(pokemon);
+        //     addListItem(pokemon);
+        //     showDetails(pokemon);
+        // } else {
+        //     loadDetails(pokeCache[id]);
+        //     addListItem(pokemon.id);
+        //     showDetails(pokemon.id);
+        // }
+        showDetails (pokemon)
+    })
+}
 
-      function loadDetailsAndCache(pokemon) {
-        loadDetails(pokemon).then((detailedPokemon) => {
-          pokeCache[detailedPokemon.id] = detailedPokemon; // Cache the fetched data
-          showDetails(detailedPokemon);
-        });
-      }
-
-      function loadDetails(pokemon) {
-        let url = pokemon.detailsUrl;
-        return fetch(url)
-          .then(function (response) {
-            return response.json();
-          })
-          .then(function (details) {
-            // Create a detailed Pokemon object with fetched data
-            let detailedPokemon = {
-              id: pokemon.id,
-              name: pokemon.name,
-              image: pokemon.image,
-              imageUrl: details.sprites.front_default,
-              imageUrlBack: details.sprites.back_default,
-              height: details.height,
-              types: details.types.map((type) => type.type.name).join(', '),
-            };
-            return detailedPokemon;
-          })
-          .catch(function (e) {
-            console.error(e);
-          });
-      }
-      
+    function showDetails (pokemon) {
+            loadDetails(pokemon);
+         }
 
 
     function loadList() {
@@ -96,6 +77,21 @@ let pokemonRepository = (function () {                                  // wrapp
 
 
   
+    function loadDetails(pokemon) {
+        let url = pokemon.detailsUrl;
+        return fetch(url).then(function(response){
+            return response.json();
+        }).then(function(details) {
+            //pokemon details
+            pokemon.imageUrl = details.sprites.front_default;
+            pokemon.imageUrlBack = details.sprites.back_default;
+            pokemon.height = details.height;
+            pokemon.types = details.types.map( (type) => type.type.name).join(', ');
+            showModal(pokemon);
+        }).catch(function(e){
+            console.error(e);
+        });
+    }
 
     // Displays the modal with pokemon details
     function showModal(pokemon) {
