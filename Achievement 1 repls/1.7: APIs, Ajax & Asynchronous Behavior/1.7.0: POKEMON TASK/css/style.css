@@ -48,11 +48,6 @@ body {
 
 .modal {   
     position: fixed;
-    /* top: 0;
-    left: 0; */
-    /* height: 50vh;
-    width: 50vw;  */
-    /* background: rgba(117, 117, 117, 0.94); */
     display:grid;
     justify-content: center;
     align-items: center;
