@@ -34,22 +34,13 @@ let pokemonRepository = (function () {                                  // wrapp
                             `                                           // add the pokemon's image, number, and name to the button
       pokemonList.appendChild(listItem);                                // add listItem pokemon button to pokemonList
       listItem.addEventListener('click', () => {                        // show pokemon details when user clicks on pokemon button
-        // if(!pokeCache[pokemon.id]){
-        //     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
-        //     const response = fetch(url);
-        //     const pokemon = response.json();
-        //     pokeCache[pokemon.id] = pokemon;
-        //     loadDetails(pokemon);
-        //     addListItem(pokemon);
-        //     showDetails(pokemon);
-        // } else {
-        //     loadDetails(pokeCache[id]);
-        //     addListItem(pokemon.id);
-        //     showDetails(pokemon.id);
-        // }
-        showDetails (pokemon)
-    })
-}
+        if (!pokeCache[pokemon.id]) {
+            loadDetailsAndCache(pokemon); // Fetch details and cache if not in cache
+          } else {
+            showDetails(pokeCache[pokemon.id]); // Use cached data
+          }
+        });
+      }
 
     function showDetails (pokemon) {
             loadDetails(pokemon);
