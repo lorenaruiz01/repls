@@ -39,7 +39,9 @@ let pokemonRepository = (function () {                                  // wrapp
     const pokeCache = {};
 
     function showDetails (pokemon) {
-        if (!pokeCache[])
+        if (!pokeCache[id]){
+            const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+        }
         loadDetails(pokemon);
     }
 
