@@ -42,9 +42,12 @@ let pokemonRepository = (function () {                                  // wrapp
         });
       }
 
-    function showDetails (pokemon) {
-            loadDetails(pokemon);
-         }
+      function loadDetailsAndCache(pokemon) {
+        loadDetails(pokemon).then((detailedPokemon) => {
+          pokeCache[detailedPokemon.id] = detailedPokemon; // Cache the fetched data
+          showDetails(detailedPokemon);
+        });
+      }
 
 
     function loadList() {
