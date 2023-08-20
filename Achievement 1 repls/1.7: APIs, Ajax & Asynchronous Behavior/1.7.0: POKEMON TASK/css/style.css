@@ -47,7 +47,7 @@ body {
 }
 
 .modal {   
-    position: fixed;
+    position:absolute;
     display:grid;
     justify-content: center;
     align-items: center;
@@ -133,9 +133,6 @@ ul {    /* ul = #pokedex in pokedex app */
 }
 
 button{
-    display: grid;
-    /* top: 5px;
-    right: 5px; */
     background-color: lavender;
     padding: 5px 5px;
     border: none;
@@ -144,6 +141,11 @@ button{
     border-radius: 3px;
     transition: transform 100ms;
 }
+
+/* .pokemon-card > .modal-close{
+    display: flex;
+    justify-content: flex-end;
+} */
 
 .modal-close:hover {
    cursor: pointer;
