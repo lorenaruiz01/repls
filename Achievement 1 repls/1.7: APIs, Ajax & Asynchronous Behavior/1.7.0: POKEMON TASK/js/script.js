@@ -20,6 +20,8 @@ let pokemonRepository = (function () {                                  // wrapp
       return pokemonList;
     }
   
+    const pokeCache = {};
+
     
     function addListItem(pokemon) {                                     // the addListItem function adds a pokemon as a list item and button
       let pokemonList = document.querySelector('.pokemon-list');        // assign ul element to pokemonList variable
@@ -32,20 +34,31 @@ let pokemonRepository = (function () {                                  // wrapp
                             `                                           // add the pokemon's image, number, and name to the button
       pokemonList.appendChild(listItem);                                // add listItem pokemon button to pokemonList
       listItem.addEventListener('click', () => {                        // show pokemon details when user clicks on pokemon button
-        showDetails(pokemon);
-      }
-    )};
+        // if(!pokeCache[pokemon.id]){
+        //     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+        //     const response = fetch(url);
+        //     const pokemon = response.json();
+        //     pokeCache[pokemon.id] = pokemon;
+        //     loadDetails(pokemon);
+        //     addListItem(pokemon);
+        //     showDetails(pokemon);
+        // } else {
+        //     loadDetails(pokeCache[id]);
+        //     addListItem(pokemon.id);
+        //     showDetails(pokemon.id);
+        // }
+        showDetails (pokemon)
+    })
+}
 
     function showDetails (pokemon) {
             loadDetails(pokemon);
          }
 
-    const pokeCache = {};
 
     function loadList() {
         return fetch(apiUrl).then(function(response) {
             return response.json();
-            
         }).then (function (json) {
             json.results.forEach(function(item, index){
                 let pokemon = {
@@ -61,14 +74,7 @@ let pokemonRepository = (function () {                                  // wrapp
         })
     }
 
-    // if(!pokeCache[pokemon.id]){
-    //     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
-    //     const response = fetch(url);
-    //     const pokemon = response.json();
-    //     pokeCache[pokemon.id] = pokemon;
-    //     loadDetails(pokemon);
-    // } else {
-    //     loadDetails(pokeCache[id]);
+
 
   
     function loadDetails(pokemon) {
