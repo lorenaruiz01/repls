@@ -36,9 +36,10 @@ let pokemonRepository = (function () {                                  // wrapp
       }
     )};
 
-
+    cont pokeCache = {};
 
     function showDetails (pokemon) {
+        
         loadDetails(pokemon);
     }
 
