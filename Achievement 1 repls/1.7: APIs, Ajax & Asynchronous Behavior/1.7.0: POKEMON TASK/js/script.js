@@ -138,9 +138,9 @@ let pokemonRepository = (function () {                                  // wrapp
         modalContainer.appendChild(modal);                              // add modal to modal container
         
         modalContainer.classList.add('is-visible');
-        modal.addEventListener('click', (e) => {                        // since this is also triggered when clicking inside the modal, 
+        modalContainer.addEventListener('click', (e) => {                        // since this is also triggered when clicking inside the modal, 
             let target = e.target;                                      
-            if (target === modal) {                            // only close it if the user clicks directly on the overlay
+            if (target === modalContainer) {                                     // only close it if the user clicks directly on the overlay
                 hideModal();
             };
         })
