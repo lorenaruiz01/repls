@@ -36,19 +36,16 @@ let pokemonRepository = (function () {                                  // wrapp
       }
     )};
 
-    const pokeCache = {};
-
     function showDetails (pokemon) {
-        if (!pokeCache[id]){
-            const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
-            const response = await fetch(url);
-        }
-        loadDetails(pokemon);
-    }
+            loadDetails(pokemon);
+         }
+
+    const pokeCache = {};
 
     function loadList() {
         return fetch(apiUrl).then(function(response) {
             return response.json();
+            
         }).then (function (json) {
             json.results.forEach(function(item, index){
                 let pokemon = {
@@ -63,6 +60,16 @@ let pokemonRepository = (function () {                                  // wrapp
             console.error(e);
         })
     }
+
+    // if(!pokeCache[pokemon.id]){
+    //     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+    //     const response = fetch(url);
+    //     const pokemon = response.json();
+    //     pokeCache[pokemon.id] = pokemon;
+    //     loadDetails(pokemon);
+    // } else {
+    //     loadDetails(pokeCache[id]);
+
   
     function loadDetails(pokemon) {
         let url = pokemon.detailsUrl;
