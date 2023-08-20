@@ -49,6 +49,31 @@ let pokemonRepository = (function () {                                  // wrapp
         });
       }
 
+      function loadDetails(pokemon) {
+        let url = pokemon.detailsUrl;
+        return fetch(url)
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (details) {
+            // Create a detailed Pokemon object with fetched data
+            let detailedPokemon = {
+              id: pokemon.id,
+              name: pokemon.name,
+              image: pokemon.image,
+              imageUrl: details.sprites.front_default,
+              imageUrlBack: details.sprites.back_default,
+              height: details.height,
+              types: details.types.map((type) => type.type.name).join(', '),
+            };
+            return detailedPokemon;
+          })
+          .catch(function (e) {
+            console.error(e);
+          });
+      }
+      
+
 
     function loadList() {
         return fetch(apiUrl).then(function(response) {
@@ -71,21 +96,6 @@ let pokemonRepository = (function () {                                  // wrapp
 
 
   
-    function loadDetails(pokemon) {
-        let url = pokemon.detailsUrl;
-        return fetch(url).then(function(response){
-            return response.json();
-        }).then(function(details) {
-            //pokemon details
-            pokemon.imageUrl = details.sprites.front_default;
-            pokemon.imageUrlBack = details.sprites.back_default;
-            pokemon.height = details.height;
-            pokemon.types = details.types.map( (type) => type.type.name).join(', ');
-            showModal(pokemon);
-        }).catch(function(e){
-            console.error(e);
-        });
-    }
 
     // Displays the modal with pokemon details
     function showModal(pokemon) {
