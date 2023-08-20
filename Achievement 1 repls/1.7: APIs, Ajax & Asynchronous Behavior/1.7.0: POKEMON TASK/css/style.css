@@ -142,10 +142,10 @@ button{
     transition: transform 100ms;
 }
 
-/* .pokemon-card > .modal-close{
+.pokemon-card > .modal-close{
     display: flex;
     justify-content: flex-end;
-} */
+}
 
 .modal-close:hover {
    cursor: pointer;
