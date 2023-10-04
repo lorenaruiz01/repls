@@ -19,4 +19,4 @@ A **package** must contain a “package.json” file. This may be:
     - Published to the JavaScript Package Registry
     - A command line script. These can’t be loaded with require() (and, thus, aren’t actually modules)
 
-** To sum it up, not all modules are packages, but most packages are modules. **
+**To sum it up, not all modules are packages, but most packages are modules.**
