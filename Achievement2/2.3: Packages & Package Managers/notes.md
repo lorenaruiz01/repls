@@ -1,6 +1,7 @@
 # 2.3: Packages and Package Managers
 
 ## Module vs. Package
+What’s the difference between modules and packages? Technically, they’re both the same thing: a separate piece of JavaScript code that achieves a specific purpose and can be imported into your app to add various functionalities. However, a package explicitly denotes a third party (or community-based) module. Once a developer has created a new module, they can release it to a repository where other developers can download and use it. The published module is referred to as a package, and it needs to be installed before it can be used in your app. 
 
 ## Package Managers
 
