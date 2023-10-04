@@ -15,4 +15,5 @@
 
 ### Packages
 - A package must contain a “package.json” file. This may be:
-    - 
+    - A third party module (loaded as all modules are, with require())
+    - Published to the JavaScript Package Registry
