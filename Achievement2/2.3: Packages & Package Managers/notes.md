@@ -11,3 +11,4 @@
 - A module is anything that can be loaded using the require() function. This may be:
     - A single JavaScript file
     - A folder that includes an “index.js” file
+    - A folder that includes a “package.json” file (i.e., a package)
