@@ -18,3 +18,5 @@
     - A third party module (loaded as all modules are, with require())
     - Published to the JavaScript Package Registry
     - A command line script. These can’t be loaded with require() (and, thus, aren’t actually modules)
+
+** To sum it up, not all modules are packages, but most packages are modules. **
