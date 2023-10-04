@@ -12,3 +12,7 @@
     - A single JavaScript file
     - A folder that includes an “index.js” file
     - A folder that includes a “package.json” file (i.e., a package)
+
+### Packages
+- A package must contain a “package.json” file. This may be:
+    - 
