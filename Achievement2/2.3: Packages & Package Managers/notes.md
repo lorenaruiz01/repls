@@ -14,7 +14,7 @@ A module is **anything** that can be loaded using the `require()` function. This
     - A folder that includes a “package.json” file (i.e., a package)
 
 ### Packages
-A **package** must contain a “package.json” file. This may be:
+A package must contain a “package.json” file. This may be:
     - A third party module (loaded as all modules are, with `require()`)
     - Published to the JavaScript Package Registry
     - A command line script. These can’t be loaded with `require()` (and, thus, aren’t actually modules)
