@@ -3,7 +3,9 @@ const app = express();
 // app represents the server
 
 // set up endpoint
-app.get('/', )
+app.get('/', (request, response) => {
+    response.send('hello world')
+})
 // get() represents HTTP method. get() method takes two arguments. The first argument is a string representing the endpoint. The second argument is a funciton that represents what is going to happen with the request and response objects. 
 
 
