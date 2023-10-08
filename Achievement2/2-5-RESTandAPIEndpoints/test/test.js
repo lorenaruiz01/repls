@@ -48,3 +48,18 @@ app.get('/students/:name', (req, res) => {
     res.json(students.find((student) =>
       { return student.name === req.params.name }));
   });
+
+  // Adds data for a new student to our list of students.
+app.post('/students', (req, res) => {
+    let newStudent = req.body;
+  
+    if (!newStudent.name) {
+      const message = 'Missing name in request body';
+      res.status(400).send(message);
+    } else {
+      newStudent.id = uuid.v4();
+      students.push(newStudent);
+      res.status(201).send(newStudent);
+    }
+  });
+  
