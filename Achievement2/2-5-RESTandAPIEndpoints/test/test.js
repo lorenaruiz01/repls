@@ -41,3 +41,10 @@ let students = [
 app.get('/students', (req, res) => {
     res.json(students);
   });
+
+  // Gets the data about a single student, by name
+
+app.get('/students/:name', (req, res) => {
+    res.json(students.find((student) =>
+      { return student.name === req.params.name }));
+  });
