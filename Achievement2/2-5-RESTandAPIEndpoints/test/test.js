@@ -63,3 +63,12 @@ app.post('/students', (req, res) => {
     }
   });
   
+  // Deletes a student from our list by ID
+app.delete('/students/:id', (req, res) => {
+    let student = students.find((student) => { return student.id === req.params.id });
+  
+    if (student) {
+      students = students.filter((obj) => { return obj.id !== req.params.id });
+      res.status(201).send('Student ' + req.params.id + ' was deleted.');
+    }
+  });
