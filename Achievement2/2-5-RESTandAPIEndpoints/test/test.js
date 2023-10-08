@@ -1,8 +1,8 @@
 
 // console.log('testing testing');
 
-const express = require('express'),
-  bodyParser = require('body-parser'),
+const express = require('express');
+  bodyParser = require('body-parser');
   uuid = require('uuid');
 
 const app = express();
