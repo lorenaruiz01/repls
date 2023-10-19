@@ -3,4 +3,4 @@
 ## to do:
 - [] finish reading 2.7
 - [] fork and work through repls
-- [] start task
+- [] finish 2.7 task
