@@ -12,9 +12,13 @@
 
                 use * to signify ALL
 
-    
     UPDATE: 
-        UPDATE table: 
+        syntax: 
+        UPDATE table
+            SET column1 = value1,
+                column2 = value2 ,...
+            WHERE
+            Condition;
 
     DELETE: 
         DELETE (datatype) FROM table
