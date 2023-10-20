@@ -1,1 +1,2 @@
 - relational databases and SQL
+- install PostgresSQL to computer
