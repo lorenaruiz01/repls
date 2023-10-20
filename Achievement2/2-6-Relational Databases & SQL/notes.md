@@ -21,4 +21,8 @@
             Condition;
 
     DELETE: 
-        DELETE (datatype) FROM table
+        syntax: 
+        DELETE FROM table
+            WHERE condition;
+
+                Be very careful when deleting data. Unless you’ve backed up your data, there’s no way to retrieve data you’ve deleted.
