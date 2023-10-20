@@ -1,2 +1,3 @@
 - relational databases and SQL
 - install PostgresSQL to computer
+- think about and create schema (structure of data)
