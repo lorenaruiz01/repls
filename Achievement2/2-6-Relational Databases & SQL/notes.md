@@ -8,3 +8,8 @@
     READ: 
         SELECT (datatype) FROM table
     
+    UPDATE: 
+        UPDATE table: 
+
+    DELETE: 
+        DELETE (datatype) FROM table
