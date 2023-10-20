@@ -5,4 +5,6 @@
     CREATE, 
             INSERT INTO 
 
-   
+    READ: 
+        SELECT (datatype) FROM table
+    
