@@ -6,5 +6,4 @@
 
 ### MongoDB
  - MongoDB Community Server: This is the Mongo server that interacts with incoming commands over the network, processes the commands, and stores data. You’ll be using the “community” edition, since it’s free and sufficient for your project, rather than the “enterprise” edition.
-
- 
+- MongoDB Shell (mongosh): This is where you run commands and make queries that will allow you to create and update a database.
