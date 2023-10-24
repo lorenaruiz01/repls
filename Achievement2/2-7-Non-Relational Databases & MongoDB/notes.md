@@ -10,3 +10,5 @@
 - MongoDB Database Tools: MongoDB comes with a lot of important tools that can be used for various purposes in your project, for instance, exporting and importing your databases, which is useful for creating and sharing backups.
 - uninstalled and reinstalled homebrew using the terminal
 - installed MongoDB using the terminal
+### Starting and Using MongoDB
+- start the (community) server with `brew services start mongodb-community`
