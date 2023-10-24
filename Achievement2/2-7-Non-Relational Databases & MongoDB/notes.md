@@ -9,3 +9,4 @@
 - MongoDB Shell (mongosh): This is where you run commands and make queries that will allow you to create and update a database.
 - MongoDB Database Tools: MongoDB comes with a lot of important tools that can be used for various purposes in your project, for instance, exporting and importing your databases, which is useful for creating and sharing backups.
 - uninstalled and reinstalled homebrew using the terminal
+- installed MongoDB using the terminal
