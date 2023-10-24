@@ -14,3 +14,4 @@
 - start the (community) server with `brew services start mongodb-community`
 - launch the shell by typing `mongosh`
 - quit the server with `brew services stop mongodb-community`
+- once launched, the mongo shell allows you to type commands for performing CRUD operations on your data. With MongoDB, you'll be writing your commands in JavaScript rather than SQL
