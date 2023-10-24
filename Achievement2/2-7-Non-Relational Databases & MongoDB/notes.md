@@ -12,3 +12,5 @@
 - installed MongoDB using the terminal
 ### Starting and Using MongoDB
 - start the (community) server with `brew services start mongodb-community`
+- launch the shell by typing `mongosh`
+- quit the server with `brew services stop mongodb-community`
