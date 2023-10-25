@@ -49,4 +49,6 @@ Collections:
         - birthyear/deathdate
         - bio
         - awards won
-    
+    Users
+        - id
+        - name
