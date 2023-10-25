@@ -30,10 +30,11 @@ Collections:
         - director
             - name
             - bio
-            - 
+            - birthdate/birthyear
         - description
         - genre
-            - genreName
+            - genreName:
+            - genreDescription
         - cover image (link)
         - feature (t/f)
 
