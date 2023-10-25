@@ -52,3 +52,13 @@ Collections:
     Users
         - id
         - name
+        - username
+        - dob
+        - emailAddress
+        - password
+        - favoriteMovies: {
+            id: 000, 
+            id: 111,
+            id: 222, 
+        }
+            
