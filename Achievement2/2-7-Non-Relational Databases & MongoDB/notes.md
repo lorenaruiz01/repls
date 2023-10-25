@@ -19,3 +19,21 @@
 
 ### Using CRUD operations in MongoDB
 - name of my database: mySpookyFlixDB
+
+#### Database Schema
+
+Collections:
+    Movies
+        - id
+        - title
+        - release year
+        - director
+            - name
+            - bio
+            - 
+        - description
+        - genre
+            - genreName
+        - cover image (link)
+        - feature (t/f)
+
