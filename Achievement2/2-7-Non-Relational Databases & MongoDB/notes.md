@@ -42,3 +42,11 @@ Collections:
         - id
         - genreName
         - genreDescription
+
+    Directors
+        - id
+        - name
+        - birthyear/deathdate
+        - bio
+        - awards won
+    
