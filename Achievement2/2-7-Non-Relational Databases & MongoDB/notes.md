@@ -38,3 +38,7 @@ Collections:
         - cover image (link)
         - feature (t/f)
 
+    Genres
+        - id
+        - genreName
+        - genreDescription
