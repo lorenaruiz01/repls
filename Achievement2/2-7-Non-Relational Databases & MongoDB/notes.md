@@ -18,3 +18,4 @@
 - once launched, the mongo shell allows you to type commands for performing CRUD operations on your data. With MongoDB, you'll be writing your commands in JavaScript rather than SQL
 
 ### Using CRUD operations in MongoDB
+- name of my database: mySpookyFlixDB
