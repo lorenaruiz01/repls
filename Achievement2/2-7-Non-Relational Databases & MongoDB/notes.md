@@ -65,3 +65,6 @@ Collections:
 ### CREATE New Collection
 - db.createCollection("movies")
 - db.[collectionName].insertOne(document-to-insert)
+
+### READ a Collection
+- use the command `db.[collectionName].find()` to read all the documents from a certain collection
