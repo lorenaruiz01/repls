@@ -61,4 +61,5 @@ Collections:
             id: 111,
             id: 222, 
         }
-            
+
+### Create New Collection
