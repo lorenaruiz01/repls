@@ -40,8 +40,8 @@ Collections:
 
     Genres
         - id
-        - genreName
-        - genreDescription
+        - name
+        - description
 
     Directors
         - id
@@ -69,3 +69,5 @@ Collections:
 ### READ a Collection
 - use the command `db.[collectionName].find()` to read all the documents from a certain collection. shows an array of documents
 - to read only the first document in a collection, use `db.[collectionName].findOne()`
+
+#### Reading with Conditions
