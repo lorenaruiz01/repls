@@ -62,6 +62,6 @@ Collections:
             id: 222, 
         }
 
-### Create New Collection
+### CREATE New Collection
 - db.createCollection("movies")
 - db.[collectionName].insertOne(document-to-insert)
