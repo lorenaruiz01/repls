@@ -63,3 +63,5 @@ Collections:
         }
 
 ### Create New Collection
+- db.createCollection("movies")
+-
