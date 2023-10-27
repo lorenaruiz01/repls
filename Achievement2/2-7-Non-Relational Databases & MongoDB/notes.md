@@ -64,4 +64,4 @@ Collections:
 
 ### Create New Collection
 - db.createCollection("movies")
--
+- db.[collectionName].insertOne(document-to-insert)
