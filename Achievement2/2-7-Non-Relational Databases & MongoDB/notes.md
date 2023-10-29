@@ -73,3 +73,7 @@ Collections:
 #### Reading with Conditions
 
 - to find a record with a specific condition use the find() function
+`db.[collectionName].find([condition])`
+    - this command would find all documents for which the condition applies.
+`db.[collectionName].findOne([condition])`
+    - this command would find only one document
