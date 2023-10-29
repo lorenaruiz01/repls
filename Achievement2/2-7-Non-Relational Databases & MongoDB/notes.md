@@ -71,3 +71,5 @@ Collections:
 - to read only the first document in a collection, use `db.[collectionName].findOne()`
 
 #### Reading with Conditions
+
+- to find a record with a specific condition use the find() function
