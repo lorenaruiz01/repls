@@ -77,3 +77,5 @@ Collections:
     - this command would find all documents for which the condition applies.
 `db.[collectionName].findOne([condition])`
     - this command would find only one document
+        for example: `db.movies.findOne( {Title: "Silence of the Lambs} )`
+    
