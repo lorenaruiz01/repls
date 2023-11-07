@@ -80,3 +80,5 @@ Collections:
         for example: `db.movies.findOne( {Title: "Silence of the Lambs} )`
    - to find a certain document by its ID, wrap the ID in an ObjectID constructor: 
         for example: `db.movies.findOne( { _id: ObjectId("5c3bd189515a081b363cb7e4")  })`
+
+- update notes
